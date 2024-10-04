@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html { font-size: 100%; }
+
+ul { list-style: none; }
+
+/* Debugging classes */
+.border-debugger { border: 1px solid red; }
+
+/* Flexbox classes */
+.flex { display: flex; }
+
+/* row */
+.flex-row { flex-direction: row; }
+
+.flex-row-horizontally-centered { justify-content: center; }
+
+.flex-row-vertically-centered { align-items: center; }
+
+.flex-row-right-justified { justify-content: flex-end; }
+
+/* column */
+.flex-column { flex-direction: column; }
+
+.flex-column-horizontally-centered { align-items: center; }
+
+.flex-column-vertically-centered { justify-content: center; }
+
+.flex-small-gap { gap: 1rem; }
+
+.flex-wrap { flex-wrap: wrap; }
+
+.flex-item-equal-spacing { flex-basis: 40%; }
+
+/* Utility classes */
+.centered-text { text-align: center; }
+
+.slight-top-padding { padding-top: 1rem; }
+
+.slight-right-padding { padding-right: 1rem; }
+
+.slight-bottom-padding { padding-bottom: 1rem; }
+
+.slight-left-padding { padding-left: 1rem; }
+
+.whitespace-nowrap { white-space: nowrap; }
+
+/* Non-reusable classes */
+/* Google and Facebook logo class */
+.logo {
+    width: 30px;
+    height: auto;
+}
+
+/* About section classes */
+.the-lady-barber-logo { 
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+}
+
+.about-text { width: 40ch; }
+
+.about-img {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    max-width: 300px;
+}
+
+/* Services section classes */
+.service-icon {
+    width: 1rem;
+    height: 1rem;
+    margin: 0.06rem 0;
+}
+
+/* Hours and Location section classes */
+.google-map {
+    width: 300px;
+    height: 300px;
+}
+
+/* Gallery Page classes */
+
+.after-photos {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.gallery-image-container { 
+    justify-content: space-around;
+    width: 100%;
+}
+
+/* .grid-container { width: 100%; } */
+
+/* .grid { display: grid; }
+
+.grid-template-columns { grid-template-columns: auto auto; }
+
+.grid-gap { gap: 1rem; } */
+
+.business-photos {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
