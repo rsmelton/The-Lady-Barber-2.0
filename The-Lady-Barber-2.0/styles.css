@@ -4,12 +4,42 @@
     padding: 0;
 }
 
-html { font-size: 100%; }
+html { 
+    font-size: 100%; 
+    font-family: sans-serif;
+}
 
 ul { list-style: none; }
 
+a { 
+    text-decoration: none; 
+    color: black;
+}
+
+a:hover { color: white; }
+
+/* ID selectors */
+#page_content { 
+    position: relative; 
+    top: 160px; 
+    margin-bottom: 160px; 
+}
+
+#navbar {
+    background-color: lightblue;
+}
+
+#about, #services, #hours-location { scroll-margin-top: 160px; }
+
+#services { background-color: lightblue; }
+
+#footer { 
+    padding: 50px;
+    background-color: lightblue;
+}
+
 /* Debugging classes */
-.border-debugger { border: 1px solid red; }
+/* .border-debugger { border: 1px solid red; } */
 
 /* Flexbox classes */
 .flex { display: flex; }
@@ -37,22 +67,42 @@ ul { list-style: none; }
 .flex-item-equal-spacing { flex-basis: 40%; }
 
 /* Utility classes */
+.larger-text { font-size: 1.1rem; }
+
 .centered-text { text-align: center; }
 
-.slight-top-padding { padding-top: 1rem; }
+.small-bottom-margin { margin-bottom: 1rem; }
 
-.slight-right-padding { padding-right: 1rem; }
+.medium-top-bottom-padding { padding: 2rem 0; }
 
-.slight-bottom-padding { padding-bottom: 1rem; }
+.small-padding { padding: 1rem; }
 
-.slight-left-padding { padding-left: 1rem; }
+.small-top-padding { padding-top: 1rem; }
+
+.small-right-padding { padding-right: 1rem; }
+
+.small-bottom-padding { padding-bottom: 1rem; }
+
+.small-left-padding { padding-left: 1rem; }
 
 .whitespace-nowrap { white-space: nowrap; }
 
 /* Non-reusable classes */
+.sticky-navbar { 
+    position: fixed; 
+    z-index: 100;
+    width: 100%;
+    padding-top: 1rem;
+}
+
 /* Google and Facebook logo class */
-.logo {
+.google-logo {
     width: 30px;
+    height: auto;
+}
+
+.facebook-logo {
+    width: 42.5px;
     height: auto;
 }
 
@@ -79,6 +129,11 @@ ul { list-style: none; }
     margin: 0.06rem 0;
 }
 
+.service-img { 
+    width: 10rem;
+    height: 10rem;
+}
+
 /* Hours and Location section classes */
 .google-map {
     width: 300px;
@@ -88,9 +143,12 @@ ul { list-style: none; }
 /* Gallery Page classes */
 
 .after-photos {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
+    /* width: 300px;
+    height: 300px; */
+    width: 350px;
+    height: auto;
+    border-radius: 5%;
+    /* box-shadow: 0px 0px 25px wheat; */
 }
 
 .gallery-image-container { 
@@ -98,16 +156,10 @@ ul { list-style: none; }
     width: 100%;
 }
 
-/* .grid-container { width: 100%; } */
-
-/* .grid { display: grid; }
-
-.grid-template-columns { grid-template-columns: auto auto; }
-
-.grid-gap { gap: 1rem; } */
-
 .business-photos {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
+    /* width: 300px;
+    height: 300px; */
+    width: 350px;
+    height: auto;
+    border-radius: 5%;
 }

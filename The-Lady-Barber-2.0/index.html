@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>The Lady Barber</title>
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="flex flex-column flex-small-gap">
+    <nav id="navbar" class="sticky-navbar flex flex-column flex-small-gap border-debugger">
         <!-- Flex container specifically for all the navlinks -->
         <ul class="flex flex-row flex-row-right-justified flex-small-gap slight-right-padding">
             <li><a href="#home/about" onclick="load_home_page('about')">About</a></li>
             <li><a href="#home/services" onclick="load_home_page('services')">Services</a></li>
-            <li><a href="#home/hourslocation" onclick="load_home_page('hours/location')">Hours/Location</a></li>
+            <li><a href="#home/hourslocation" onclick="load_home_page('hours-location')">Hours/Location</a></li>
             <li><a href="#gallery" onclick="load_gallery_page()">Gallery</a></li>
         </ul>
         <!-- Flex container for logo along with a column Flex container for branding text -->
@@ -29,13 +29,13 @@
     <!-- Section for Dynamic Separated Pages -->
     <div id="page_content"></div>
     <!-- Footer -->
-    <footer class="flex flex-column flex-column-horizontally-centered flex-small-gap centered-text">
+    <footer id="footer" class="flex flex-column flex-column-horizontally-centered flex-small-gap centered-text">
         <span>&copy; 2021-2024 The Lady Barber. All rights reserved.</span>
         <span>If you would like to leave a review, click on the Google or Facebook link below!</span>
         <!-- Flex container for Google and Facebook Logos -->
-        <div class="flex flex-row flex-small-gap">
-            <a href='https://www.google.com/search?q=the+lady+barber+florence+al&oq=the+lad&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDkyBwgCEAAYjwIyBwgDEAAYjwIyBggEEEUYPNIBCDExNTBqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8'><img class="logo" src="./images/GoogleLogo.png" alt="Google Logo"></a>
-            <a href='https://www.facebook.com/DeonnaScott.LadyBarber/'><img class="logo" src="./images/FacebookLogo.png" alt="Facebook Logo"></a>
+        <div class="flex flex-row flex-row-vertically-centered flex-small-gap">
+            <a href='https://www.google.com/search?q=the+lady+barber+florence+al&oq=the+lad&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDkyBwgCEAAYjwIyBwgDEAAYjwIyBggEEEUYPNIBCDExNTBqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8'><img class="google-logo" src="./images/GoogleLogo.png" alt="Google Logo"></a>
+            <a href='https://www.facebook.com/DeonnaScott.LadyBarber/'><img class="facebook-logo" src="./images/FacebookLogo.png" alt="Facebook Logo"></a>
         </div>
     </footer>
     <!-- Script for different pages -->

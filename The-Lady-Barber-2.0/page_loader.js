@@ -18,8 +18,8 @@ async function load_home_page(section) {
     } else if (section === 'services') {
         var services_content = document.getElementById('services');
         services_content.scrollIntoView({ behavior: 'smooth' });
-    } else if (section === 'hours/location') {
-        var hours_location_content = document.getElementById('hours/location');
+    } else if (section === 'hours-location') {
+        var hours_location_content = document.getElementById('hours-location');
         hours_location_content.scrollIntoView({ behavior: 'smooth' });
     }
 }
