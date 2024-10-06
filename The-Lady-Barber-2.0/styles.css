@@ -11,6 +11,8 @@ html {
 
 ul { list-style: none; }
 
+h1 { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
 a { 
     text-decoration: none; 
     color: black;
@@ -31,19 +33,29 @@ a:hover { color: white; }
 }
 
 /* 177 is the height of the navbar */
-#about, #services, #hours-location { scroll-margin-top: 177px; box-shadow: 5px 0px 10px black; }
+#about, #services, #hours-location { 
+    scroll-margin-top: 177px; 
+    box-shadow: 0px 0px 10px black; 
+}
 
-#about { background-color: white; }
+#about { background-color: lightsteelblue; }
 #services { background-color: #FFF5EE; }
-#hours-location { background-color: white; }
+#hours-location { background-color: lightsteelblue; }
+
+#client-photos, #business-photos { 
+    background-color: lightsteelblue; 
+    box-shadow: 0px 0px 10px black; 
+}
 
 #footer { 
     padding: 50px;
     background-color: #FFF5EE;
 }
 
+
 /* Debugging classes */
 /* .border-debugger { border: 1px solid red; } */
+.shadow { box-shadow: 0px 0px 10px black; }
 
 /* Flexbox classes */
 .flex { display: flex; }
@@ -92,22 +104,12 @@ a:hover { color: white; }
 .whitespace-nowrap { white-space: nowrap; }
 
 /* Non-reusable classes */
+/* Navbar classes */
 .sticky-navbar { 
     position: fixed; 
     z-index: 100;
     width: 100%;
     padding-top: 1rem;
-}
-
-/* Google and Facebook logo class */
-.google-logo {
-    width: 30px;
-    height: auto;
-}
-
-.facebook-logo {
-    width: 42.5px;
-    height: auto;
 }
 
 /* About section classes */
@@ -124,6 +126,7 @@ a:hover { color: white; }
     height: auto;
     border-radius: 50%;
     max-width: 300px;
+    box-shadow: 0px 0px 10px black;
 }
 
 /* Services section classes */
@@ -140,30 +143,31 @@ a:hover { color: white; }
 
 /* Hours and Location section classes */
 .google-map {
-    width: 300px;
+    width: 350px;
     height: 300px;
+    box-shadow: 0px 0px 10px black;
 }
 
 /* Gallery Page classes */
-
-.after-photos {
-    /* width: 300px;
-    height: 300px; */
-    width: 350px;
-    height: auto;
-    border-radius: 5%;
-    /* box-shadow: 0px 0px 25px wheat; */
-}
-
-.gallery-image-container { 
-    justify-content: space-around;
+.gallery-photo-container { 
+    justify-content: space-evenly;
     width: 100%;
 }
 
-.business-photos {
-    /* width: 300px;
-    height: 300px; */
-    width: 350px;
+.gallery-photos {
+    width: 250px;
     height: auto;
-    border-radius: 5%;
+    border-radius: 15%;
+    box-shadow: 0px 0px 10px black;
+}
+
+/* Footer classes */
+.google-logo {
+    width: 30px;
+    height: auto;
+}
+
+.facebook-logo {
+    width: 42.5px;
+    height: auto;
 }

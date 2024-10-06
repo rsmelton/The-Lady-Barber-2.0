@@ -37,4 +37,5 @@ async function load_home_page(section) {
 async function load_gallery_page() {
     var page_content = document.getElementById('page_content');
     page_content.innerHTML = await (await fetch('gallery.html')).text();
+    window.scrollTo(0,0);
 }
