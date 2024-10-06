@@ -1,11 +1,11 @@
 // This loads the home page when first loading the page
 // since we are loading pages dynamically
-window.onload = async function() {
-    // const navbarHeight = document.getElementById('navbar').offsetHeight;
-    // console.log(`Navbar Height: ${navbarHeight}`);
-    var page_content = document.getElementById('page_content');
-    page_content.innerHTML = await (await fetch('home.html')).text();
-}
+// window.onload = async function() {
+//     const navbarHeight = document.getElementById('navbar').offsetHeight;
+//     console.log(`Navbar Height: ${navbarHeight}`);
+//     var page_content = document.getElementById('page_content');
+//     page_content.innerHTML = await (await fetch('home.html')).text();
+// }
 
 // Home page loader with scroll functionality for different sections.
 async function load_home_page(section) {

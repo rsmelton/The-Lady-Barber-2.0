@@ -32,7 +32,6 @@ a:hover { color: white; }
 /* 177 is the height of the navbar */
 #about, #services, #hours-location { scroll-margin-top: 177px; }
 
-
 #services { background-color: lightblue; }
 
 #footer { 
