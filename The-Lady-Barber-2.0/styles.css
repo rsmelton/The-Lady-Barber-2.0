@@ -27,12 +27,15 @@ a:hover { color: white; }
 
 #navbar {
     background-color: lightblue;
+    box-shadow: 0px 0px 10px black;
 }
 
 /* 177 is the height of the navbar */
-#about, #services, #hours-location { scroll-margin-top: 177px; }
+#about, #services, #hours-location { scroll-margin-top: 177px; box-shadow: 0px 0px 10px black; }
 
-#services { background-color: lightblue; }
+#about { background-color: honeydew; }
+#services { background-color: lightgoldenrodyellow; }
+#hours-location { background-color: honeydew; }
 
 #footer { 
     padding: 50px;
@@ -40,7 +43,7 @@ a:hover { color: white; }
 }
 
 /* Debugging classes */
-.border-debugger { border: 1px solid red; }
+/* .border-debugger { border: 1px solid red; } */
 
 /* Flexbox classes */
 .flex { display: flex; }
