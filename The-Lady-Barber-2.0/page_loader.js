@@ -16,7 +16,7 @@
 // });
 
 document.addEventListener('DOMContentLoaded', function() {
-    // we set this to 'about since when loading the page it will be at the top of the page anyways'
+    // we set this to 'about since when loading the page it will be at the top of the home page anyways'
     load_home_page('about');
 });
 
@@ -30,7 +30,7 @@ async function load_home_page(section) {
     // then depending on the section we want, we then scroll to that section.
     setTimeout(function() {
         document.getElementById(section).scrollIntoView({ behavior: 'smooth' });
-    }, 100);
+    }, 200);
 }
 
 // Gallery page loader
