@@ -25,8 +25,10 @@ async function load_home_page(section) {
     // fetch('home.html')
     //     .then(response => response.text())
     //     .then(html => document.getElementById('page_content').innerHTML = html);
-    var page = await fetch('home.html');
-    var page_html = await page.text();
+    // var page = await fetch('home.html');
+    // var page_html = await page.text();
+
+    var page_html = await ((await fetch('home.html')).text());
 
     var page_content = document.getElementById('page_content');
     page_content.innerHTML = page_html;
