@@ -16,7 +16,8 @@
 // });
 
 document.addEventListener('DOMContentLoaded', function() {
-    load_home_page();
+    // we set this to 'about since when loading the page it will be at the top of the page anyways'
+    load_home_page('about');
 });
 
 // Home page loader with scroll functionality for different sections.
@@ -53,9 +54,12 @@ async function load_home_page(section) {
     // else if (section === 'hours-location') var content = document.getElementById('hours-location');
     // content.scrollIntoView({ behavior: 'smooth' });
 
-    if      (section === 'about')          document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
-    else if (section === 'services')       document.getElementById('services').scrollIntoView({ behavior: 'smooth' });
-    else if (section === 'hours-location') document.getElementById('hours-location').scrollIntoView({ behavior: 'smooth' });
+    // if (section === '') return;
+    document.getElementById(section).scrollIntoView({ behavior: 'smooth' });
+
+    // if      (section === 'about')          document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+    // else if (section === 'services')       document.getElementById('services').scrollIntoView({ behavior: 'smooth' });
+    // else if (section === 'hours-location') document.getElementById('hours-location').scrollIntoView({ behavior: 'smooth' });
 }
 
 // Gallery page loader
