@@ -20,11 +20,17 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Home page loader with scroll functionality for different sections.
-function load_home_page(section) {
+async function load_home_page(section) {
     // first we load the home page
-    fetch('home.html')
-        .then(response => response.text())
-        .then(html => document.getElementById('page_content').innerHTML = html);
+    // fetch('home.html')
+    //     .then(response => response.text())
+    //     .then(html => document.getElementById('page_content').innerHTML = html);
+    var page = await fetch('home.html');
+    var page_html = await page.text();
+
+    var page_content = document.getElementById('page_content');
+    page_content.innerHTML = page_html;
+
 
     // then depending on the section we want, we then scroll to that section.
     // if (section === 'about') {
