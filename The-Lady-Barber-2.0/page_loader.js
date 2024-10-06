@@ -7,6 +7,13 @@
 //     page_content.innerHTML = await (await fetch('home.html')).text();
 // }
 
+// This loads the home page when first loading the page
+// since we are loading pages dynamically
+document.addEventListener('DOMContentLoaded', async function() {
+    var page_content = document.getElementById('page_content');
+    page_content.innerHTML = await fetch('home.html').then(response => response.text());
+});
+
 // Home page loader with scroll functionality for different sections.
 async function load_home_page(section) {
     // first we load the home page
