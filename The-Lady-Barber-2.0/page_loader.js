@@ -19,22 +19,33 @@
 // });
 
 // Home page loader with scroll functionality for different sections.
-async function load_home_page(section) {
+function load_home_page(section) {
     // first we load the home page
-    var page_content = document.getElementById('page_content');
-    page_content.innerHTML = await (await fetch('home.html')).text();
+    // var page_content = document.getElementById('page_content');
+    // page_content.innerHTML = await (await fetch('home.html')).text();
+
+    fetch('home.html')
+    .then(response => response.text())
+    .then(html => {
+        document.getElementById('page_content').innerHTML = html;
+    });
 
     // then depending on the section we want, we then scroll to that section.
-    if (section === 'about') {
-        var about_content = document.getElementById('about');
-        about_content.scrollIntoView({ behavior: 'smooth' });
-    } else if (section === 'services') {
-        var services_content = document.getElementById('services');
-        services_content.scrollIntoView({ behavior: 'smooth' });
-    } else if (section === 'hours-location') {
-        var hours_location_content = document.getElementById('hours-location');
-        hours_location_content.scrollIntoView({ behavior: 'smooth' });
-    }
+    // if (section === 'about') {
+    //     var about_content = document.getElementById('about');
+    //     about_content.scrollIntoView({ behavior: 'smooth' });
+    // } else if (section === 'services') {
+    //     var services_content = document.getElementById('services');
+    //     services_content.scrollIntoView({ behavior: 'smooth' });
+    // } else if (section === 'hours-location') {
+    //     var hours_location_content = document.getElementById('hours-location');
+    //     hours_location_content.scrollIntoView({ behavior: 'smooth' });
+    // }
+
+    if (section === 'about')               var content = document.getElementById('about');
+    else if (section === 'services')       var content = document.getElementById('services');
+    else if (section === 'hours-location') var content = document.getElementById('hours-location');
+    content.scrollIntoView({ behavior: 'smooth' });
 }
 
 // Gallery page loader
