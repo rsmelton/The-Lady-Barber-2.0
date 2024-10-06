@@ -9,9 +9,13 @@
 
 // This loads the home page when first loading the page
 // since we are loading pages dynamically
-document.addEventListener('DOMContentLoaded', async function() {
-    var page_content = document.getElementById('page_content');
-    page_content.innerHTML = await fetch('home.html').then(response => response.text());
+document.addEventListener('DOMContentLoaded', function() {
+    // var page_content = document.getElementById('page_content');
+    fetch('home.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('page_content').innerHTML = html;
+        })
 });
 
 // Home page loader with scroll functionality for different sections.
