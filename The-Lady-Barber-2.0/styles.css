@@ -24,7 +24,7 @@ a:hover { color: var(--secondary-color); }
 
 /* ID selectors */
 #page_content { 
-    margin-top: 193px;
+    /* margin-top: 193px; */
     /* overflow: hidden; */
     /* position: relative;  */
     /* top: 177px;  */
@@ -41,7 +41,7 @@ a:hover { color: var(--secondary-color); }
 }
 
 /* 193 is the height of the navbar */
-#about, #services, #hours-location { scroll-margin-top: 193px; }
+/* #about, #services, #hours-location { scroll-margin-top: 193px; } */
 
 #about { background-color: var(--secondary-color); }
 #services { background-color: var(--primary-color); }
