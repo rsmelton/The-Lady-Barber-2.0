@@ -1,41 +1,20 @@
-// This loads the home page when first loading the page
-// since we are loading pages dynamically
-// window.onload = async function() {
-//     const navbarHeight = document.getElementById('navbar').offsetHeight;
-//     console.log(`Navbar Height: ${navbarHeight}`);
-//     var page_content = document.getElementById('page_content');
-//     page_content.innerHTML = await (await fetch('home.html')).text();
-// }
+var page_content = document.getElementById('page_content');
+var home_page;
+var gallery_page;
 
-// This loads the home page when first loading the page
-// since we are loading pages dynamically
-// document.addEventListener('DOMContentLoaded', function() {
-//     fetch('home.html')
-//         .then(response => response.text())
-//         .then(html => document.getElementById('page_content').innerHTML = html);
-// });
-
-document.addEventListener('DOMContentLoaded', function() {
-    // we set this to 'about since when loading the page it will be at the top of the home page anyways'
-    load_home_page('about');
+document.addEventListener('DOMContentLoaded', async function() {
+    // We fetch the home page and after we get the html back we can then load the page
+    // by default since we are loading content dynamically and the home page would be our default page
+    home_page = await ((await fetch('home.html')).text());
+    gallery_page = await (await fetch('gallery.html')).text();
+    load_home_page();
 });
 
-// Home page loader with scroll functionality for different sections.
-async function load_home_page(section) {
-    // first we load the home page
-    var page_content = document.getElementById('page_content');
-    var page_html = await ((await fetch('home.html')).text());
-    page_content.innerHTML = page_html;
-
-    // then depending on the section we want, we then scroll to that section.
-    setTimeout(function() {
-        document.getElementById(section).scrollIntoView({ behavior: 'smooth' });
-    }, 200);
+function load_home_page(section) {
+    page_content.innerHTML = home_page;
 }
 
-// Gallery page loader
 async function load_gallery_page() {
-    var page_content = document.getElementById('page_content');
-    page_content.innerHTML = await (await fetch('gallery.html')).text();
+    page_content.innerHTML = gallery_page;
     window.scrollTo(0,0);
 }
