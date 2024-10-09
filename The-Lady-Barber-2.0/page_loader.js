@@ -5,7 +5,7 @@ function scrollToSection(event, sectionId) {
     const section = document.getElementById(sectionId);
     section.scrollIntoView({ behavior: 'smooth' });
 
-    // let sectionYOffset = document.getElementById(section).offsetTop;
+    // let sectionYOffset = document.getElementById(sectionId).offsetTop;
     // window.scrollTo(0, sectionYOffset);
     // document.getElementById(section).scrollTop(sectionYOffset);
 }
