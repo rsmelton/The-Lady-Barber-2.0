@@ -28,15 +28,15 @@ a:hover { color: var(--secondary-color); }
 /* ID selectors */
 #page_content { 
     overflow: auto;
-    height: 70vh;
+    height: 70dvh;
 }
 
 #navbar { 
     background-color: var(--primary-color); 
     z-index: 100;
     width: 100%;
-    overflow: -moz-hidden-unscrollable;
-    height: 30vh;
+    overflow: hidden;
+    height: 30dvh;
 }
 
 /* #about, #services, #hours-location { scroll-margin-top: 12rem; } */
