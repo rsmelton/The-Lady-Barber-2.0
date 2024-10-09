@@ -35,7 +35,7 @@ a:hover { color: var(--secondary-color); }
     background-color: var(--primary-color); 
     z-index: 100;
     width: 100%;
-    overflow: hidden;
+    overflow: -moz-hidden-unscrollable;
     height: 30vh;
 }
 
