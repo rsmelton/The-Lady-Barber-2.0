@@ -28,7 +28,7 @@ a:hover { color: var(--secondary-color); }
 /* ID selectors */
 #page_content { 
     overflow: auto;
-    height: 70dvh;
+    height: 80dvh;
 }
 
 #navbar { 
@@ -36,7 +36,7 @@ a:hover { color: var(--secondary-color); }
     z-index: 100;
     width: 100%;
     overflow: hidden;
-    height: 30dvh;
+    height: 20dvh;
 }
 
 /* #about, #services, #hours-location { scroll-margin-top: 12rem; } */
@@ -107,15 +107,15 @@ a:hover { color: var(--secondary-color); }
 
 /* About section classes */
 .the-lady-barber-logo { 
-    width: 125px;
-    height: 125px;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
 }
 
 /* .about-text { width: 40ch; } */
 
 .about-img {
-    width: 300px;
+    width: 250px;
     height: auto;
     border-radius: 10%;
     max-width: 300px;
