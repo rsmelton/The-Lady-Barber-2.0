@@ -8,36 +8,132 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav id="navbar" class="flex flex-column flex-small-gap small-top-padding small-left-padding small-bottom-padding shadow border-debugger">
-        <!-- Flex container specifically for all the navlinks -->
-        <ul class="flex flex-row flex-row-right-justified flex-small-gap small-right-padding">
-            <li><a href="#about" onclick="load_home_page()">About</a></li>
-            <li><a href="#services" onclick="load_home_page()">Services</a></li>
-            <li><a href="#hours-location" onclick="load_home_page()">Hours/Location</a></li>
-            <li><a href="#gallery" onclick="load_gallery_page()">Gallery</a></li>
-        </ul>
-        <!-- Flex container for logo along with a column Flex container for branding text -->
-        <div class="flex flex-row flex-row-vertically-centered flex-small-gap">
-            <img class="the-lady-barber-logo" src="./images/TheLadyBarberLogo.png" alt="The Lady Barber Logo" />
-            <div class="flex flex-column">
-                <h1>The Lady Barber</h1>
-                <span>256-627-6672</span>
-                <span>2440 Co Rd 24 Florence, AL 35633</span>
+    <div>
+        <nav id="navbar" class="flex flex-column flex-small-gap small-top-padding small-left-padding small-bottom-padding shadow border-debugger">
+            <!-- Flex container specifically for all the navlinks -->
+            <ul class="flex flex-row flex-row-right-justified flex-small-gap small-right-padding">
+                <li><a href="#" onclick="scrollToSection(event, 'about')">About</a></li>
+                <li><a href="#" onclick="scrollToSection(event, 'services')">Services</a></li>
+                <li><a href="#" onclick="scrollToSection(event, 'hours-location')">Hours/Location</a></li>
+                <!-- <li><a href="" onclick="load_home_page('about')">About</a></li>
+                <li><a href="" onclick="load_home_page('services')">Services</a></li>
+                <li><a href="" onclick="load_home_page('hours-location')">Hours/Location</a></li> -->
+                <!-- <li><a href="#gallery" onclick="load_gallery_page()">Gallery</a></li> -->
+            </ul>
+            <!-- Flex container for logo along with a column Flex container for branding text -->
+            <div class="flex flex-row flex-row-vertically-centered flex-small-gap">
+                <img class="the-lady-barber-logo" src="./images/TheLadyBarberLogo.png" alt="The Lady Barber Logo" />
+                <div class="flex flex-column">
+                    <h1>The Lady Barber</h1>
+                    <span>256-627-6672</span>
+                    <span>2440 Co Rd 24 Florence, AL 35633</span>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="page_content">
+        <!-- Section for Dynamic Separated Pages -->
+         <!-- Old way -->
+        <!-- <div id="page_content"></div> -->
+
+        <!-- New way -->
+        <!-- About Section -->
+        <div id="about" class="flex flex-column flex-small-gap medium-top-bottom-padding small-right-padding small-left-padding shadow border-debugger">
+            <h1 class="border-debugger">About</h1>
+            <div class="flex flex-row flex-row-horizontally-centered flex-row-vertically-centered flex-wrap flex-small-gap border-debugger">
+                <div class="flex flex-column flex-column-horizontally-centered flex-item-equal-spacing border-debugger">
+                    <img class="about-img shadow" src="./images/TheLadyBarber.png" alt="Deonna w/ Business sign" />
+                </div>
+                <div class="flex flex-column flex-column-horizontally-centered flex-item-equal-spacing about-text-container border-debugger">
+                    <p class="about-text">Hi! I'm Deonna. I am a second-generation lady barber. My mom, Jewel Fortner, was the first lady barber in Florence. In 1999, I started my career at <i>Roger's Barber Stylists</i>, where I worked for 21 years. In 2021, I branched off on my own to open <i>The Lady Barber</i>.</p>
+                </div>
             </div>
         </div>
-    </nav>
-    <!-- Section for Dynamic Separated Pages -->
-    <div id="page_content"></div>
-    <!-- Footer -->
-    <footer id="footer" class="flex flex-column flex-column-horizontally-centered flex-small-gap shadow centered-text">
-        <span>&copy; 2021-2024 The Lady Barber. All rights reserved.</span>
-        <span>If you would like to leave a review, click on the Google or Facebook link below!</span>
-        <!-- Flex container for Google and Facebook Logos -->
-        <div class="flex flex-row flex-row-vertically-centered flex-small-gap">
-            <a href='https://www.google.com/search?q=the+lady+barber+florence+al&oq=the+lad&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDkyBwgCEAAYjwIyBwgDEAAYjwIyBggEEEUYPNIBCDExNTBqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8'><img class="google-logo" src="./images/GoogleLogo.png" alt="Google Logo"></a>
-            <a href='https://www.facebook.com/DeonnaScott.LadyBarber/'><img class="facebook-logo" src="./images/FacebookLogo.png" alt="Facebook Logo"></a>
+        <!-- Services Section -->
+        <div id="services" class="flex flex-column flex-small-gap medium-top-bottom-padding small-right-padding small-left-padding shadow border-debugger">
+            <h1 class="border-debugger">Services</h1>
+            <div class="flex flex-row flex-row-horizontally-centered flex-small-gap flex-wrap border-debugger">
+                <div class="flex flex-row flex-row-horizontally-centered flex-row-vertically-centered flex-item-equal-spacing border-debugger">
+                    <img class="service-img" src="./images/icons/hair-salon-icon.png" alt="Scissors Icon" />
+                </div>
+                <div class="flex flex-row flex-row-horizontally-centered flex-small-gap flex-item-equal-spacing">
+                    <div class="flex flex-column flex-small-gap border-debugger">
+                        <div class="flex flex-row flex-row-right-justified border-debugger">
+                            <img class="service-icon" src="./images/icons/electric-trimmer-icon.png" alt="Trimmer Icon" />
+                        </div>
+                        <div class="flex flex-row flex-row-right-justified border-debugger">
+                            <img class="service-icon" src="./images/icons/straight-barber-razor-icon.png" alt="Razor Icon" />
+                        </div>
+                        <div class="flex flex-row flex-row-right-justified border-debugger">
+                            <img class="service-icon" src="./images/icons/hair-salon-icon.png" alt="Scissors Icon" />
+                        </div>
+                        <div class="flex flex-row flex-small-gap border-debugger">
+                            <img class="service-icon" src="./images/icons/shampoo-bottle-icon.png" alt="Shampoo Icon" />
+                            <img class="service-icon" src="./images/icons/hair-salon-icon.png" alt="Scissors Icon" />
+                        </div>
+                        <div class="flex flex-row flex-small-gap border-debugger">
+                            <img class="service-icon" src="./images/icons/electric-trimmer-icon.png" alt="Trimmer Icon" />
+                            <img class="service-icon" src="./images/icons/hair-salon-icon.png" alt="Scissors Icon" />
+                        </div>
+                    </div>
+                    <div class="flex flex-column flex-small-gap border-debugger">
+                        <span class="border-debugger">Beard Trim</span>
+                        <span class="border-debugger">Shave</span>
+                        <span class="border-debugger">Haircut</span>
+                        <span class="whitespace-nowrap border-debugger">Haircut w/ Shampoo</span>
+                        <span class="whitespace-nowrap border-debugger">Haircut w/ Trim</span>
+                    </div>
+                    <div class="flex flex-column flex-small-gap border-debugger">
+                        <span class="border-debugger">$10</span>
+                        <span class="border-debugger">$15</span>
+                        <span class="border-debugger">$15</span>
+                        <span class="border-debugger">$20</span>
+                        <span class="border-debugger">$20</span>
+                    </div>
+                </div>
+            </div>
         </div>
-    </footer>
+        <!-- Hours/Location Section -->
+        <div id="hours-location" class="flex flex-column flex-small-gap medium-top-bottom-padding small-right-padding small-left-padding shadow border-debugger">
+            <h1 class="border-debugger">Hours/Location</h1>
+            <div class="flex flex-row flex-row-horizontally-centered flex-wrap flex-small-gap border-debugger">
+                <div class="flex flex-row flex-row-horizontally-centered flex-item-equal-spacing flex-small-gap border-debugger">
+                    <div class="flex flex-column flex-column-vertically-centered flex-small-gap border-debugger">
+                        <span>MONDAY</span>
+                        <span>TUESDAY</span>
+                        <span>WEDNESDAY</span>
+                        <span>THURSDAY</span>
+                        <span>FRIDAY</span>
+                        <span>SATURDAY</span>
+                        <span>SUNDAY</span>
+                    </div>
+                    <div class="flex flex-column flex-column-vertically-centered flex-small-gap border-debugger">
+                        <span class="whitespace-nowrap">CLOSED</span>
+                        <span class="whitespace-nowrap">8:30AM-5PM</span>
+                        <span class="whitespace-nowrap">8:30AM-5PM</span>
+                        <span class="whitespace-nowrap">8:30AM-5PM</span>
+                        <span class="whitespace-nowrap">8:30AM-5PM</span>
+                        <span class="whitespace-nowrap">8:30AM-12PM</span>
+                        <span class="whitespace-nowrap">CLOSED</span>
+                    </div>
+                </div>
+                <div class="flex flex-row flex-row-horizontally-centered flex-item-equal-spacing border-debugger">
+                    <iframe class='google-map shadow' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120292.45270792468!2d-87.80138847636925!3d34.89338120986842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x887d37ca8553c261%3A0x6e29c3c10d51adee!2sThe%20Lady%20Barber!5e0!3m2!1sen!2sus!4v1726884837492!5m2!1sen!2sus" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer" class="flex flex-column flex-column-horizontally-centered flex-small-gap shadow centered-text">
+            <span>&copy; 2021-2024 The Lady Barber. All rights reserved.</span>
+            <span>If you would like to leave a review, click on the Google or Facebook link below!</span>
+            <!-- Flex container for Google and Facebook Logos -->
+            <div class="flex flex-row flex-row-vertically-centered flex-small-gap">
+                <a href='https://www.google.com/search?q=the+lady+barber+florence+al&oq=the+lad&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDkyBwgCEAAYjwIyBwgDEAAYjwIyBggEEEUYPNIBCDExNTBqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8'><img class="google-logo" src="./images/GoogleLogo.png" alt="Google Logo"></a>
+                <a href='https://www.facebook.com/DeonnaScott.LadyBarber/'><img class="facebook-logo" src="./images/FacebookLogo.png" alt="Facebook Logo"></a>
+            </div>
+        </footer>
+    </div>
     <!-- Script for different pages -->
     <script defer src="page_loader.js"></script>
 </body>
