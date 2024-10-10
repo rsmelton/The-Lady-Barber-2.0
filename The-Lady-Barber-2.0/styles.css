@@ -25,7 +25,7 @@ a { color: black; }
 
 a:hover { color: var(--secondary-color); }
 
-hr { border: 1px solid black; }
+hr { border: 0.75px solid black; }
 
 /* ID selectors */
 /* dvh -> dynamic viewport height, allows correct resizing on mobile */
@@ -86,9 +86,7 @@ hr { border: 1px solid black; }
 
 .centered-text { text-align: center; }
 
-.small-bottom-margin { margin-bottom: 1rem; }
-
-.medium-top-bottom-padding { padding: 2rem 0; }
+.small-top-bottom-padding { padding: 1rem 0; }
 
 .small-padding { padding: 1rem; }
 
@@ -96,7 +94,7 @@ hr { border: 1px solid black; }
 
 .small-right-padding { padding-right: 1rem; }
 
-.small-bottom-padding { padding-bottom: 1rem; }
+/* .small-bottom-padding { padding-bottom: 1rem; } */
 
 .small-left-padding { padding-left: 1rem; }
 
