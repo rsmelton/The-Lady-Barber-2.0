@@ -32,16 +32,10 @@ a:hover { color: var(--secondary-color); }
 hr { border: 0.75px solid black; }
 
 /* ID selectors */
-/* dvh -> dynamic viewport height, allows correct resizing on mobile */
-#page_content { 
-    overflow: auto;
-    height: 75dvh;
-}
+#page_content { overflow: auto; }
 
 #navbar { 
     background-color: var(--primary-color); 
-    z-index: 100;
-    width: 100%;
     padding-bottom: 1rem;
 }
 
