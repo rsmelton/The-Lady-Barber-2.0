@@ -54,7 +54,7 @@ hr { border: 0.75px solid black; }
 }
 
 /* Debugging classes */
-/* .border-debugger { border: 1px solid red; } */
+.border-debugger { border: 1px solid red; }
 
 /* Flexbox classes */
 .flex { display: flex; }
@@ -153,8 +153,10 @@ hr { border: 0.75px solid black; }
 
 .gallery-photos {
     /* width: 150px;
-    height: auto;
-    border-radius: 5%; */
+    height: auto; */
+    height: 200px;
+    width: auto;
+    border-radius: 5%;
 }
 
 /* Footer classes */
