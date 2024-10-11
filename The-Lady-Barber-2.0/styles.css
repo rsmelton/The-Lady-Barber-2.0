@@ -54,7 +54,7 @@ hr { border: 0.75px solid black; }
 }
 
 /* Debugging classes */
-.border-debugger { border: 1px solid red; }
+/* .border-debugger { border: 1px solid red; } */
 
 /* Flexbox classes */
 .flex { display: flex; }
