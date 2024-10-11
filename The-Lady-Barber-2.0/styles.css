@@ -120,6 +120,8 @@ hr { border: 0.75px solid black; }
     max-width: 300px;
 }
 
+.about-text-container { min-width: 50%; }
+
 .google-logo {
     width: 30px;
     height: auto;
