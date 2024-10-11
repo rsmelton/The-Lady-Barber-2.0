@@ -46,7 +46,7 @@ hr { border: 0.75px solid black; }
 #services { background-color: var(--secondary-color); }
 #hours-location { background-color: var(--secondary-color); } */
 
-#client-photos, #business-photos { background-color: lightsteelblue; }
+/* #client-photos, #business-photos { background-color: var(--primary-color); } */
 
 #footer { 
     padding: 1rem;
@@ -84,7 +84,6 @@ hr { border: 0.75px solid black; }
 /* .flex-item-equal-spacing { flex-basis: 40%; } */
 .flex-item-equal-spacing { flex: 1 }
 
-
 /* Utility classes */
 .full-width { width: 100%; }
 
@@ -101,8 +100,6 @@ hr { border: 0.75px solid black; }
 .small-left-padding { padding-left: 1rem; }
 
 .whitespace-nowrap { white-space: nowrap; }
-
-/* .shadow { box-shadow: 0px 0px 10px black; } */
 
 /* Non-reusable classes */
 
@@ -155,9 +152,11 @@ hr { border: 0.75px solid black; }
 }
 
 .gallery-photos {
-    width: 250px;
+    width: 200px;
     height: auto;
-    border-radius: 15%;
+    border-radius: 50%;
+    border: 1px solid black;
+    box-shadow: 0px 10px 10px black;
 }
 
 /* Footer classes */
