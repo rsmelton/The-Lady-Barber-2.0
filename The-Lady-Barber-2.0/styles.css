@@ -1,7 +1,8 @@
 :root {
     --primary-color: #FFF5EE;
+    --secondary-color: white;
+    --text-color: black;
     /* --secondary-color: lightsteelblue; */
-    --secondary-color: tan;
 }
 
 * {
@@ -30,7 +31,7 @@ a {
     transition: 0.3s;
 }
 
-a:hover { color: var(--secondary-color); }
+a:hover { color: tan; }
 
 hr { border: 0.75px solid black; }
 
@@ -42,9 +43,9 @@ hr { border: 0.75px solid black; }
     padding-bottom: 1rem;
 }
 
-/* #about { background-color: var(--secondary-color); }
-#services { background-color: var(--secondary-color); }
-#hours-location { background-color: var(--secondary-color); } */
+/* #about { background-color: var(--secondary-color); } */
+/* #services { background-color: #54d8e7; } */
+/* #hours-location { background-color: var(--secondary-color); }  */
 
 /* #client-photos, #business-photos { background-color: var(--primary-color); } */
 
