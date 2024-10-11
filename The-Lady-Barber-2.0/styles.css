@@ -43,6 +43,12 @@ hr { border: 0.75px solid black; }
     padding-bottom: 1rem;
 }
 
+#main-photo {
+    height: 400px;
+    width: auto;
+    border-radius: 5%;
+}
+
 /* #about { background-color: var(--secondary-color); } */
 /* #services { background-color: #54d8e7; } */
 /* #hours-location { background-color: var(--secondary-color); }  */
@@ -158,6 +164,13 @@ hr { border: 0.75px solid black; }
     height: 200px;
     width: auto;
     border-radius: 5%;
+}
+
+.thumbnail {
+    width: 75px;
+    height: 75px;
+    border-radius: 5%;
+    cursor: pointer;
 }
 
 /* Footer classes */
