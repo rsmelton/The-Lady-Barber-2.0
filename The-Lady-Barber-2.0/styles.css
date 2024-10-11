@@ -148,15 +148,13 @@ hr { border: 0.75px solid black; }
 /* Gallery Page classes */
 .gallery-photo-container { 
     justify-content: space-evenly;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .gallery-photos {
-    width: 150px;
+    /* width: 150px;
     height: auto;
-    border-radius: 5%;
-    /* border: 1px solid black; */
-    /* box-shadow: 0px 10px 10px black; */
+    border-radius: 5%; */
 }
 
 /* Footer classes */
