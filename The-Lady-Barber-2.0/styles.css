@@ -113,7 +113,7 @@ hr { border: 0.75px solid black; }
 .about-img {
     width: 15rem;
     height: auto;
-    border-radius: 10%;
+    border-radius: 5%;
 }
 
 .about-text-container { min-width: 50%; }
@@ -154,9 +154,9 @@ hr { border: 0.75px solid black; }
 .gallery-photos {
     width: 150px;
     height: auto;
-    border-radius: 50%;
-    border: 1px solid black;
-    box-shadow: 0px 10px 10px black;
+    border-radius: 5%;
+    /* border: 1px solid black; */
+    /* box-shadow: 0px 10px 10px black; */
 }
 
 /* Footer classes */
