@@ -43,7 +43,7 @@ hr { border: 0.75px solid black; }
 #about, #services, #location-hours, #gallery, #footer { font-size: 1.25rem; }
 
 #main-photo {
-    height: 400px;
+    height: 250px;
     width: auto;
     border-radius: 5%;
 }
@@ -193,3 +193,21 @@ hr { border: 0.75px solid black; }
 
 /* Footer classes */
 /* .footer-text-font-size { font-size: 1.25rem; } */
+
+@media (min-width: 400px) {
+    #main-photo {
+        height: 275px;
+    }
+}
+
+@media (min-width: 600px) {
+    #main-photo {
+        height: 400px;
+    }
+}
+
+@media (min-width: 800px) {
+    #main-photo {
+        height: 550px;
+    }
+}
