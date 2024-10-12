@@ -42,11 +42,11 @@ hr { border: 0.75px solid black; }
 
 #about, #services, #location-hours, #gallery, #footer { font-size: 1.25rem; }
 
-#main-photo {
+/* #main-photo {
     height: 400px;
     width: auto;
     border-radius: 5%;
-}
+} */
 
 /* #about { background-color: var(--secondary-color); } */
 /* #services { background-color: #54d8e7; } */
@@ -165,9 +165,15 @@ hr { border: 0.75px solid black; }
     border-radius: 5%;
 } */
 
+.main-photo {
+    height: 400px;
+    width: auto;
+    border-radius: 5%;
+}
+
 .thumbnail {
-    width: 75px;
     height: 75px;
+    width: auto;
     border-radius: 5%;
     cursor: pointer;
 }
