@@ -94,6 +94,8 @@ hr { border: 0.75px solid black; }
 
 .flex-small-gap { gap: 1rem; }
 
+.flex-xsmall-gap { gap: 0.1rem; }
+
 .flex-wrap { flex-wrap: wrap; }
 
 /* .flex-item-equal-spacing { flex-basis: 40%; } */
