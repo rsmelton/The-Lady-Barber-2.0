@@ -135,25 +135,28 @@
         <div id="gallery" class="flex flex-column flex-small-gap small-top-bottom-padding small-right-padding small-left-padding">
             <h1>Gallery</h1>
             <!-- By default this container will start at 0 so we start at the first image in the list in our switchGalleryPhoto.js file -->
-            <div id="main-photo-container" class="flex flex-row flex-row-horizontally-centered" data-index="0">
-                <!-- <img id="main-photo" src="./images/gallery-images/DeonnaWSign.png" alt="Deonna w/ Business Sign"> -->
+            <div id="main-photo-container" class="flex flex-row flex-row-horizontally-centered flex-row-vertically-centered flex-small-gap" data-index="0">
+                <button id="gallery-left-arrow-button" onclick="onGalleryLeftArrowClick()">&lt;-</button>
+                <img id="main-photo" src="./images/gallery-images/DeonnaWSign.png" alt="Deonna w/ Business Sign" data-index="0">
+                <button id="gallery-right-arrow-button" onclick="onGalleryRightArrowClick()">-&gt;</button>
             </div>
-            <div class="flex flex-row flex-row-horizontally-centered flex-wrap flex-small-gap">
-                <button id="gallery-left-arrow-button">&lt;-</button>
+            <div id="thumbnail-container" class="flex flex-row flex-row-horizontally-centered flex-wrap flex-small-gap">
+                <!-- <button id="gallery-left-arrow-button">&lt;-</button> -->
                 <!-- By default this container will start at 1 so we start at the second image in the list in our switchGalleryPhoto.js file -->
-                <div id="thumbnail-container" data-index="1">
-                    <!-- <img src="./images/gallery-images/TheLadyBarberShop.png" alt="Outside of Shop" class="thumbnail"> -->
-                </div>
-                <button id="gallery-right-arrow-button">-&gt;</button>
-                <!-- <img src="./images/gallery-images/TheLadyBarberShop.png" alt="Outside of Shop" class="thumbnail">
-                <img src="./images/gallery-images/LadyBarberHours.png" alt="Hours of Operation" class="thumbnail">
-                <img src="./images/gallery-images/WaitingRoomAngle1.png" alt="Waiting Room Angle 1" class="thumbnail">
-                <img src="./images/gallery-images/WaitingRoomAngle2.png" alt="Waiting Room Angle 2" class="thumbnail">
-                <img src="./images/gallery-images/GuestChair.png" alt="Guest Chair" class="thumbnail">
-                <img src="./images/gallery-images/BarberChair.png" alt="Barber Chair" class="thumbnail">
-                <img src="./images/gallery-images/After1.png" alt="After Photo 1" class="thumbnail" />
-                <img src="./images/gallery-images/After2.png" alt="After Photo 2" class="thumbnail" />
-                <img src="./images/gallery-images/After3.png" alt="After Photo 3" class="thumbnail" /> -->
+                <!-- <div id="thumbnail-container" data-index="1">
+                    <img src="./images/gallery-images/TheLadyBarberShop.png" alt="Outside of Shop" class="thumbnail">
+                </div> -->
+                <!-- <button id="gallery-right-arrow-button">-&gt;</button> -->
+                <img src="./images/gallery-images/DeonnaWSign.png" alt="Deonna w/ Business Sign" class="thumbnail" onclick="onThumbnailClick(this)" data-index="0">
+                <img src="./images/gallery-images/TheLadyBarberShop.png" alt="Outside of Shop" class="thumbnail" onclick="onThumbnailClick(this)" data-index="1">
+                <img src="./images/gallery-images/LadyBarberHours.png" alt="Hours of Operation" class="thumbnail" onclick="onThumbnailClick(this)" data-index="2">
+                <img src="./images/gallery-images/WaitingRoomAngle1.png" alt="Waiting Room Angle 1" class="thumbnail" onclick="onThumbnailClick(this)" data-index="3">
+                <img src="./images/gallery-images/WaitingRoomAngle2.png" alt="Waiting Room Angle 2" class="thumbnail" onclick="onThumbnailClick(this)" data-index="4">
+                <img src="./images/gallery-images/GuestChair.png" alt="Guest Chair" class="thumbnail" onclick="onThumbnailClick(this)" data-index="5">
+                <img src="./images/gallery-images/BarberChair.png" alt="Barber Chair" class="thumbnail" onclick="onThumbnailClick(this)" data-index="6">
+                <img src="./images/gallery-images/After1.png" alt="After Photo 1" class="thumbnail" onclick="onThumbnailClick(this)" data-index="7">
+                <img src="./images/gallery-images/After2.png" alt="After Photo 2" class="thumbnail" onclick="onThumbnailClick(this)" data-index="8">
+                <img src="./images/gallery-images/After3.png" alt="After Photo 3" class="thumbnail" onclick="onThumbnailClick(this)" data-index="9">
             </div>
             <!-- <div class="flex flex-row flex-row-horizontally-centered flex-small-gap flex-wrap border-debugger">
                 <img class="gallery-photos" src="./images/gallery-images/DeonnaWSign.png" alt="Deonna w/ Business Sign">

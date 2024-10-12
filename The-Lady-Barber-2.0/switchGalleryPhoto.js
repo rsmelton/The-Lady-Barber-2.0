@@ -1,86 +1,128 @@
-// New way
-let gallery = [
-    { src: './images/gallery-images/DeonnaWSign.png',       alt: 'Deonna w/ Business Sign' },
-    { src: './images/gallery-images/TheLadyBarberShop.png', alt: 'Outside of Shop'         },
-    { src: './images/gallery-images/LadyBarberHours.png',   alt: 'Hours of Operation'      },
-    { src: './images/gallery-images/WaitingRoomAngle1.png', alt: 'Waiting Room Angle 1'    },
-    { src: './images/gallery-images/WaitingRoomAngle2.png', alt: 'Waiting Room Angle 2'    },
-    { src: './images/gallery-images/GuestChair.png',        alt: 'Guest Chair'             },
-    { src: './images/gallery-images/BarberChair.png',       alt: 'Barber Chair'            },
-    { src: './images/gallery-images/After1.png',            alt: 'After Photo 1'           },
-    { src: './images/gallery-images/After2.png',            alt: 'After Photo 2'           },
-    { src: './images/gallery-images/After3.png',            alt: 'After Photo 3'           }
-]
+// Grab the main photo so we can change it when the user clicks on a thumbnail
+let main_photo = document.getElementById('main-photo');
 
-let main_photo_container = document.getElementById('main-photo-container');
-let main_photo_index = Number(main_photo_container.dataset.index);
+// Grab all the thumbnails and throw them into the thumbnail_container
+let thumbnail_container = Array.from(document.getElementById('thumbnail-container').children);
 
-let main_photo_src = gallery[main_photo_index].src;
-let main_photo_alt = gallery[main_photo_index].alt;
-main_photo_container.innerHTML = `<img class='main-photo' src='${main_photo_src}' alt='${main_photo_alt}' />`;
+// Set intial thumbnail to have the current-thumbnail class by default.
+let initial_thumbnail = thumbnail_container[0];
+initial_thumbnail.classList.add('current-thumbnail');
 
-let thumbnail_container = document.getElementById('thumbnail-container');
-let thumbnail_index = Number(thumbnail_container.dataset.index);
+function onThumbnailClick(thumbnail) {
+    let photo_index = Number(main_photo.getAttribute('data-index'));
+    let prevThumbnail = thumbnail_container[photo_index];
+    prevThumbnail.classList.remove('current-thumbnail');
 
-let thumbnail_src = gallery[thumbnail_index].src;
-let thumbnail_alt = gallery[thumbnail_index].alt;
-thumbnail_container.innerHTML = `<img class='thumbnail' src='${thumbnail_src}' alt='${thumbnail_alt}' />`;
+    thumbnail.classList.add('current-thumbnail');
+    main_photo.setAttribute('src', thumbnail.src);
+    main_photo.setAttribute('alt', thumbnail.alt);
+    main_photo.setAttribute('data-index', thumbnail.dataset.index);
+}
 
-// When the user clicks the left arrow
-document.getElementById('gallery-left-arrow-button').addEventListener('click', () => {
-    // we just update the indices of the main photo and the thumbnail
-    // main_photo_container.dataset.index = main_photo_index - 1;
-    // thumbnail_container.dataset.index = thumbnail_index - 1;
+function onGalleryLeftArrowClick() {
+    let photo_index = Number(main_photo.getAttribute('data-index'));
+    let prevThumbnail = thumbnail_container[photo_index];
+    prevThumbnail.classList.remove('current-thumbnail');
 
-    main_photo_index -= 1;
-    thumbnail_index -= 1;
+    // We want to avoid going out of bounds so we check to make sure we don't go past 0
+    // Then we set the main photo fields to be the last thumbnail in the arrays fields
+    if (photo_index - 1 < 0) {
+        // Grab the last thumbnail in the container
+        var thumbnail = thumbnail_container[thumbnail_container.length - 1];
+    } else {
+        // Just grab the thumbnail before the main photo
+        var thumbnail = thumbnail_container[photo_index - 1];
+    }
+    thumbnail.classList.add('current-thumbnail');
+    main_photo.setAttribute('src', thumbnail.src);
+    main_photo.setAttribute('alt', thumbnail.alt);
+    main_photo.setAttribute('data-index', thumbnail.dataset.index);
+}
 
-    if (main_photo_index < 0) { main_photo_index = gallery.length - 1; }
-    if (thumbnail_index < 0) { thumbnail_index = gallery.length - 1; }
-    
-    main_photo_src = gallery[main_photo_index].src;
-    main_photo_alt = gallery[main_photo_index].alt;
-    main_photo_container.innerHTML = `<img class='main-photo' src='${main_photo_src}' alt='${main_photo_alt}' />`;
+function onGalleryRightArrowClick() {
+    let photo_index = Number(main_photo.getAttribute('data-index'));
+    let prevThumbnail = thumbnail_container[photo_index];
+    prevThumbnail.classList.remove('current-thumbnail');
 
-    thumbnail_src = gallery[thumbnail_index].src;
-    thumbnail_alt = gallery[thumbnail_index].alt;
-    thumbnail_container.innerHTML = `<img class='thumbnail' src='${thumbnail_src}' alt='${thumbnail_alt}' />`;
-});
-
-// When the user clicks the right arrow
-document.getElementById('gallery-right-arrow-button').addEventListener('click', () => {
-    main_photo_index += 1;
-    thumbnail_index += 1;
-
-    if (main_photo_index > gallery.length - 1) { main_photo_index = 0; }
-    if (thumbnail_index > gallery.length - 1) { thumbnail_index = 0; }
-    
-    main_photo_src = gallery[main_photo_index].src;
-    main_photo_alt = gallery[main_photo_index].alt;
-    main_photo_container.innerHTML = `<img class='main-photo' src='${main_photo_src}' alt='${main_photo_alt}' />`;
-
-    thumbnail_src = gallery[thumbnail_index].src;
-    thumbnail_alt = gallery[thumbnail_index].alt;
-    thumbnail_container.innerHTML = `<img class='thumbnail' src='${thumbnail_src}' alt='${thumbnail_alt}' />`;
-});
+    // We want to avoid going out of bounds so we check to make sure we don't go past 0
+    // Then we set the main photo fields to be the last thumbnail in the arrays fields
+    if (photo_index + 1 > thumbnail_container.length - 1) {
+        // Grab the last thumbnail in the container
+        var thumbnail = thumbnail_container[0];
+    } else {
+        // Just grab the thumbnail before the main photo
+        var thumbnail = thumbnail_container[photo_index + 1];
+    }
+    thumbnail.classList.add('current-thumbnail');
+    main_photo.setAttribute('src', thumbnail.src);
+    main_photo.setAttribute('alt', thumbnail.alt);
+    main_photo.setAttribute('data-index', thumbnail.dataset.index);
+}
 
 
 // Old way
-// var mainPhoto = document.getElementById('main-photo');
-// var thumbnails = document.querySelectorAll('.thumbnail');
+// // Grab the main photo so we can change it when the user clicks on a thumbnail
+// let main_photo = document.getElementById('main-photo');
 
-// thumbnails.forEach(thumbnail => {
+// // Grab all the thumbnails and throw them into the thumbnail_container
+// let thumbnail_container = Array.from(document.getElementById('thumbnail-container').children);
+
+// // Set first thumbnail to have the current-thumbnail class by default.
+// let thumbnail = thumbnail_container[0];
+// thumbnail.classList.add('current-thumbnail');
+
+
+// // Fix later to be an onclick inside of the html instead, but take the inner code and use for the onclick function.
+// thumbnail_container.forEach(thumbnail => {
 //     thumbnail.addEventListener('click', () => {
-//         // create temp variable to hold old main photo
-//         let tempSrc = mainPhoto.src;
-//         let tempAlt = mainPhoto.alt;
+//         let photo_index = Number(main_photo.getAttribute('data-index'));
+//         let prevThumbnail = thumbnail_container[photo_index];
 
-//         // set new mainPhoto with thumbnail that was clicked
-//         mainPhoto.src = thumbnail.src;
-//         mainPhoto.alt = thumbnail.alt;
+//         prevThumbnail.classList.remove('current-thumbnail');
+//         thumbnail.classList.add('current-thumbnail');
 
-//         // replace thumbnail that was clicked with old photo
-//         thumbnail.src = tempSrc;
-//         thumbnail.alt = tempAlt;
+//         main_photo.setAttribute('src', thumbnail.src);
+//         main_photo.setAttribute('alt', thumbnail.alt);
+//         main_photo.setAttribute('data-index', thumbnail.dataset.index);
 //     });
+// });
+
+// document.getElementById('gallery-left-arrow-button').addEventListener('click', () => {
+//     let photo_index = Number(main_photo.getAttribute('data-index'));
+//     let prevThumbnail = thumbnail_container[photo_index];
+//     prevThumbnail.classList.remove('current-thumbnail');
+
+//     // We want to avoid going out of bounds so we check to make sure we don't go past 0
+//     // Then we set the main photo fields to be the last thumbnail in the arrays fields
+//     if (photo_index - 1 < 0) {
+//         // Grab the last thumbnail in the container
+//         var thumbnail = thumbnail_container[thumbnail_container.length - 1];
+//     } else {
+//         // Just grab the thumbnail before the main photo
+//         var thumbnail = thumbnail_container[photo_index - 1];
+//     }
+//     thumbnail.classList.add('current-thumbnail');
+//     main_photo.setAttribute('src', thumbnail.src);
+//     main_photo.setAttribute('alt', thumbnail.alt);
+//     main_photo.setAttribute('data-index', thumbnail.dataset.index);
+// });
+
+// document.getElementById('gallery-right-arrow-button').addEventListener('click', () => {
+//     let photo_index = Number(main_photo.getAttribute('data-index'));
+//     let prevThumbnail = thumbnail_container[photo_index];
+//     prevThumbnail.classList.remove('current-thumbnail');
+
+//     // We want to avoid going out of bounds so we check to make sure we don't go past 0
+//     // Then we set the main photo fields to be the last thumbnail in the arrays fields
+//     if (photo_index + 1 > thumbnail_container.length - 1) {
+//         // Grab the last thumbnail in the container
+//         var thumbnail = thumbnail_container[0];
+//     } else {
+//         // Just grab the thumbnail before the main photo
+//         var thumbnail = thumbnail_container[photo_index + 1];
+//     }
+//     thumbnail.classList.add('current-thumbnail');
+//     main_photo.setAttribute('src', thumbnail.src);
+//     main_photo.setAttribute('alt', thumbnail.alt);
+//     main_photo.setAttribute('data-index', thumbnail.dataset.index);
 // });
