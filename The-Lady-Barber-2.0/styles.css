@@ -19,10 +19,7 @@ html {
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 
-body { 
-    height: 100%; 
-    /* font-size: 1.5rem; */
-}
+body { height: 100%; }
 
 ul { list-style: none; }
 
@@ -42,6 +39,8 @@ hr { border: 0.75px solid black; }
     background-color: var(--primary-color); 
     padding-bottom: 1rem;
 }
+
+#about, #services, #location-hours, #gallery { font-size: 1.25rem; }
 
 #main-photo {
     height: 400px;
@@ -142,10 +141,10 @@ hr { border: 0.75px solid black; }
     height: 10rem;
 }
 
-.services-text-font-size { font-size: 1.5rem; }
+/* .services-text-font-size { font-size: 1.5rem; } */
 
 /* Hours and Location section classes */
-.hours-text-font-size { font-size: 1.5rem; }
+/* .hours-text-font-size { font-size: 1.5rem; } */
 
 .google-map {
     width: 350px;
@@ -174,4 +173,4 @@ hr { border: 0.75px solid black; }
 }
 
 /* Footer classes */
-.footer-text-font-size { font-size: 1.25rem; }
+/* .footer-text-font-size { font-size: 1.25rem; } */
