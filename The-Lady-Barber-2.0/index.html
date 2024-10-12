@@ -136,8 +136,12 @@
             <h1>Gallery</h1>
             <!-- By default this container will start at 0 so we start at the first image in the list in our switchGalleryPhoto.js file -->
             <div id="main-photo-container" class="flex flex-row flex-row-horizontally-centered flex-row-vertically-centered flex-small-gap" data-index="0">
-                <button id="gallery-left-arrow-button" onclick="onGalleryLeftArrowClick()">&lt;-</button>
+                <!-- <button id="gallery-left-arrow-button" onclick="onGalleryLeftArrowClick()">&lt;-</button> -->
                 <img id="main-photo" src="./images/gallery-images/DeonnaWSign.png" alt="Deonna w/ Business Sign" data-index="0">
+                <!-- <button id="gallery-right-arrow-button" onclick="onGalleryRightArrowClick()">-&gt;</button> -->
+            </div>
+            <div class="flex flex-row flex-row-horizontally-centered flex-row-vertically-centered flex-small-gap">
+                <button id="gallery-left-arrow-button" onclick="onGalleryLeftArrowClick()">&lt;-</button>
                 <button id="gallery-right-arrow-button" onclick="onGalleryRightArrowClick()">-&gt;</button>
             </div>
             <div id="thumbnail-container" class="flex flex-row flex-row-horizontally-centered flex-wrap flex-small-gap">

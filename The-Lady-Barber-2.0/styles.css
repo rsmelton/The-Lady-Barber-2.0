@@ -188,8 +188,7 @@ hr { border: 0.75px solid black; }
 }
 
 .current-thumbnail {
-    border: 2.5px solid black;
-    box-shadow: 0px 0px 10px black;
+    box-shadow: 0px 5px 10px red;
 }
 
 /* Footer classes */
