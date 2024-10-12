@@ -142,7 +142,7 @@ hr { border: 0.75px solid black; }
     height: 10rem;
 }
 
-.services-text-font-size { font-size: 1.75rem; }
+.services-text-font-size { font-size: 1.5rem; }
 
 /* Hours and Location section classes */
 .hours-text-font-size { font-size: 1.5rem; }
@@ -153,18 +153,18 @@ hr { border: 0.75px solid black; }
 }
 
 /* Gallery Page classes */
-.gallery-photo-container { 
+/* .gallery-photo-container { 
     justify-content: space-evenly;
-    /* width: 100%; */
-}
+    width: 100%;
+} */
 
-.gallery-photos {
-    /* width: 150px;
-    height: auto; */
+/* .gallery-photos {
+    width: 150px;
+    height: auto;
     height: 200px;
     width: auto;
     border-radius: 5%;
-}
+} */
 
 .thumbnail {
     width: 75px;
