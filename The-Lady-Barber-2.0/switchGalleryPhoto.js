@@ -8,17 +8,23 @@ let thumbnail_container = Array.from(document.getElementById('thumbnail-containe
 let initial_thumbnail = thumbnail_container[0];
 initial_thumbnail.classList.add('current-thumbnail');
 
-function onThumbnailClick(thumbnail) {
-    let photo_index = Number(main_photo.getAttribute('data-index'));
-    let prevThumbnail = thumbnail_container[photo_index];
-    prevThumbnail.classList.remove('current-thumbnail');
-
+function replaceMainPhotoWithThumbnail(thumbnail) {
     thumbnail.classList.add('current-thumbnail');
     main_photo.setAttribute('src', thumbnail.src);
     main_photo.setAttribute('alt', thumbnail.alt);
     main_photo.setAttribute('data-index', thumbnail.dataset.index);
 }
 
+// When the user clicks on random thumbnail
+function onThumbnailClick(thumbnail) {
+    let photo_index = Number(main_photo.getAttribute('data-index'));
+    let prevThumbnail = thumbnail_container[photo_index];
+    prevThumbnail.classList.remove('current-thumbnail');
+
+    replaceMainPhotoWithThumbnail(thumbnail);
+}
+
+// When the user clicks the left arrow
 function onGalleryLeftArrowClick() {
     let photo_index = Number(main_photo.getAttribute('data-index'));
     let prevThumbnail = thumbnail_container[photo_index];
@@ -33,31 +39,36 @@ function onGalleryLeftArrowClick() {
         // Just grab the thumbnail before the main photo
         var thumbnail = thumbnail_container[photo_index - 1];
     }
-    thumbnail.classList.add('current-thumbnail');
-    main_photo.setAttribute('src', thumbnail.src);
-    main_photo.setAttribute('alt', thumbnail.alt);
-    main_photo.setAttribute('data-index', thumbnail.dataset.index);
+
+    replaceMainPhotoWithThumbnail(thumbnail);
 }
 
+// When the user clicks the right arrow
 function onGalleryRightArrowClick() {
     let photo_index = Number(main_photo.getAttribute('data-index'));
     let prevThumbnail = thumbnail_container[photo_index];
     prevThumbnail.classList.remove('current-thumbnail');
 
-    // We want to avoid going out of bounds so we check to make sure we don't go past 0
-    // Then we set the main photo fields to be the last thumbnail in the arrays fields
+    // We want to avoid going out of bounds so we check to make sure we don't go past 
+    // length of the container - 1
+    // Then we set the main photo fields to be the first thumbnail in the arrays fields
     if (photo_index + 1 > thumbnail_container.length - 1) {
-        // Grab the last thumbnail in the container
+        // Grab the first thumbnail in the container
         var thumbnail = thumbnail_container[0];
     } else {
-        // Just grab the thumbnail before the main photo
+        // Just grab the thumbnail after the main photo
         var thumbnail = thumbnail_container[photo_index + 1];
     }
-    thumbnail.classList.add('current-thumbnail');
-    main_photo.setAttribute('src', thumbnail.src);
-    main_photo.setAttribute('alt', thumbnail.alt);
-    main_photo.setAttribute('data-index', thumbnail.dataset.index);
+
+    replaceMainPhotoWithThumbnail(thumbnail);
 }
+
+// function replaceMainPhotoWithThumbnail(thumbnail) {
+//     thumbnail.classList.add('current-thumbnail');
+//     main_photo.setAttribute('src', thumbnail.src);
+//     main_photo.setAttribute('alt', thumbnail.alt);
+//     main_photo.setAttribute('data-index', thumbnail.dataset.index);
+// }
 
 
 // Old way
