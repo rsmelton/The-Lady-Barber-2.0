@@ -185,11 +185,11 @@ hr { border: 0.75px solid black; }
 .gallery-arrow-container {
     background-color: #EEEEEE;
     border-radius: 50%;
-    padding: 0.5rem;
+    padding: 1rem;
 }
 
 .gallery-arrow-icon {
-    width: 30px;
+    width: 15px;
     height: auto;
     /* padding: 1rem; */
     /* border: 1px solid black; */
