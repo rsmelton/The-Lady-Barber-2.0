@@ -190,13 +190,8 @@ hr { border: 0.75px solid black; }
 }
 
 .gallery-arrow-icon {
-    width: 15px;
+    width: 10px;
     height: auto;
-    /* padding: 1rem; */
-    /* border: 1px solid black; */
-    /* border-radius: 50%; */
-    /* cursor: pointer; */
-    /* background-color: #EEEEEE; */
 }
 
 .thumbnail {
@@ -207,7 +202,7 @@ hr { border: 0.75px solid black; }
 }
 
 .current-thumbnail {
-    box-shadow: 0px 5px 10px red;
+    box-shadow: 0 0.3rem #BBBBBB;
 }
 
 /* Footer classes */
