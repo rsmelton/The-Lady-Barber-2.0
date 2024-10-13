@@ -48,6 +48,8 @@ hr { border: 0.75px solid black; }
     border-radius: 5%;
 }
 
+#thumbnail-container { gap: 0.4rem; }
+
 /* #about { background-color: var(--secondary-color); } */
 /* #services { background-color: #54d8e7; } */
 /* #hours-location { background-color: var(--secondary-color); }  */
