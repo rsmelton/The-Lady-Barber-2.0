@@ -8,14 +8,14 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav id="navbar" class="flex flex-column flex-small-gap small-top-padding small-left-padding border-debugger">
+    <nav id="navbar" class="flex flex-column flex-small-gap small-top-padding small-right-padding small-left-padding border-debugger">
         <!-- Flex container specifically for all the navlinks -->
-        <ul class="flex flex-row flex-row-right-justified flex-small-gap flex-wrap small-right-padding border-debugger">
-            <li><a href="#about">About</a></li>
+        <ul class="flex flex-row flex-row-right-justified flex-small-gap flex-wrap border-debugger">
+            <li><a href="#about" class="navlink">About</a></li>
             <!-- <li><a href="#work">Work</a></li> -->
-            <li><a href="#services">Services</a></li>
-            <li><a href="#location-hours">Location/Hours</a></li>
-            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#services" class="navlink">Services</a></li>
+            <li><a href="#location-hours" class="navlink">Location/Hours</a></li>
+            <li><a href="#gallery" class="navlink">Gallery</a></li>
         </ul>
         <!-- Flex container for logo along with a column Flex container for branding text -->
         <div class="flex flex-row flex-row-vertically-centered flex-small-gap border-debugger">
@@ -27,11 +27,11 @@
             </div>
         </div>
     </nav>
-    <hr>
+    <!-- <hr> -->
     <div id="page_content">
         <!-- About Section -->
         <div id="about" class="flex flex-column flex-small-gap small-top-bottom-padding small-right-padding small-left-padding border-debugger">
-            <h1 class="border-debugger">About</h1>
+            <h2 class="border-debugger">About</h2>
             <div class="flex flex-row flex-row-horizontally-centered flex-row-vertically-centered flex-wrap flex-small-gap border-debugger">
                 <div class="flex flex-column flex-column-horizontally-centered flex-item-equal-spacing border-debugger">
                     <img class="about-img" src="./images/TheLadyBarber.png" alt="Deonna w/ Business sign" />
@@ -48,9 +48,9 @@
                 </div>
             </div>
         </div>
-        <hr>
+        <!-- <hr> -->
         <!-- <div id="work" class="flex flex-column flex-small-gap small-top-bottom-padding small-right-padding small-left-padding ">
-            <h1 class="small-bottom-padding border-debugger">Work</h1>
+            <h2 class="small-bottom-padding border-debugger">Work</h2>
             <div class="flex flex-row flex-row-horizontally-centered flex-small-gap flex-wrap gallery-photo-container border-debugger ">
                 <img class="gallery-photos" src="./images/gallery-images/After1.png" alt="After Photo 1" />
                 <img class="gallery-photos" src="./images/gallery-images/After2.png" alt="After Photo 2" />
@@ -59,7 +59,7 @@
         </div> -->
         <!-- Services Section -->
         <div id="services" class="flex flex-column flex-small-gap small-top-bottom-padding small-right-padding small-left-padding border-debugger">
-            <h1 class="border-debugger">Services</h1>
+            <h2 class="border-debugger">Services</h2>
             <div class="flex flex-row flex-row-horizontally-centered flex-small-gap flex-wrap border-debugger">
                 <div class="flex flex-row flex-row-horizontally-centered flex-row-vertically-centered flex-item-equal-spacing border-debugger">
                     <img class="service-img" src="./images/icons/hair-salon-icon.png" alt="Scissors Icon" />
@@ -101,10 +101,10 @@
                 </div>
             </div>
         </div>
-        <hr>
+        <!-- <hr> -->
         <!-- Hours/Location Section -->
         <div id="location-hours" class="flex flex-column flex-small-gap small-top-bottom-padding small-right-padding small-left-padding border-debugger">
-            <h1 class="border-debugger">Location/Hours</h1>
+            <h2 class="border-debugger">Location/Hours</h2>
             <div class="flex flex-row flex-row-horizontally-centered flex-wrap flex-small-gap border-debugger">
                 <div class="flex flex-row flex-row-horizontally-centered flex-item-equal-spacing border-debugger">
                     <iframe class='google-map ' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120292.45270792468!2d-87.80138847636925!3d34.89338120986842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x887d37ca8553c261%3A0x6e29c3c10d51adee!2sThe%20Lady%20Barber!5e0!3m2!1sen!2sus!4v1726884837492!5m2!1sen!2sus" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
@@ -131,9 +131,9 @@
                 </div>
             </div>
         </div>
-        <hr>
+        <!-- <hr> -->
         <div id="gallery" class="flex flex-column flex-xsmall-gap small-top-bottom-padding small-right-padding small-left-padding">
-            <h1>Gallery</h1>
+            <h2 class="border-debugger">Gallery</h2>
             <!-- By default this container will start at 0 so we start at the first image in the list in our switchGalleryPhoto.js file -->
             <div id="main-photo-container" class="flex flex-row flex-row-horizontally-centered flex-row-vertically-centered" data-index="0">
                 <!-- <button id="gallery-left-arrow-button" onclick="onGalleryLeftArrowClick()">&lt;-</button> -->
@@ -178,7 +178,7 @@
                 <img class="gallery-photos" src="./images/gallery-images/BarberChair.png" alt="Barber Chair">
             </div> -->
         </div>
-        <hr>
+        <!-- <hr> -->
         <!-- Footer -->
         <footer id="footer" class="flex flex-column flex-column-horizontally-centered flex-small-gap centered-text footer-text-font-size">
             <span>&copy; 2021-2024 The Lady Barber. All rights reserved.</span>

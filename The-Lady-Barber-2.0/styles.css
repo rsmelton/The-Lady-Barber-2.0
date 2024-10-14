@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #FFF5EE;
+    /* --primary-color: #FFF5EE; */
     --secondary-color: white;
     --text-color: black;
     /* --secondary-color: lightsteelblue; */
@@ -15,21 +15,25 @@
 html { 
     font-size: 100%; 
     font-family: sans-serif;
+    color: var(--text-color);
     /* scroll-behavior: smooth; */
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 
-body { height: 100%; }
+body { height: 100%; background-color: var(--secondary-color);}
 
 ul { list-style: none; }
 
 a { 
     color: black; 
     transition: 0.3s;
+    text-decoration: none;
 }
 
+/* a:hover { color: tan; } */
 a:hover { color: tan; }
 
+/* hr { border: 0.75px solid black; } */
 hr { border: 0.75px solid black; }
 
 /* ID selectors */
@@ -112,6 +116,8 @@ hr { border: 0.75px solid black; }
 .whitespace-nowrap { white-space: nowrap; }
 
 /* Non-reusable classes */
+
+.navlink { box-shadow: 0 0.1rem black; }
 
 /* About section classes */
 .the-lady-barber-logo { 
@@ -204,7 +210,9 @@ hr { border: 0.75px solid black; }
 }
 
 .current-thumbnail {
-    box-shadow: 0 0.3rem #BBBBBB;
+    /* box-shadow: 0 0.3rem #BBBBBB; */
+    box-shadow: 0 0.3rem #EC9536;
+    /* box-shadow: 0 0.3rem var(--text-color); */
 }
 
 /* Footer classes */

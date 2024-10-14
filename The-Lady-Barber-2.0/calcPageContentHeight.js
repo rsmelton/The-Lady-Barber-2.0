@@ -5,9 +5,13 @@ pageContent.style.height = (window.innerHeight - navbarHeight) + 'px';
 
 // Make sure to calculate the height of the content when loading the page
 // and when resizing the page
-// window.addEventListener('load', () => {
+// window.addEventListener('DOMContentLoaded', () => {
 //     pageContent.style.height = (window.innerHeight - navbarHeight) + 'px';
 // });
+
+window.onload(() => {
+    pageContent.style.height = (window.innerHeight - navbarHeight) + 'px';
+});
 
 window.addEventListener('resize', () => {
     pageContent.style.height = (window.innerHeight - navbarHeight) + 'px';
