@@ -63,13 +63,6 @@ function onGalleryRightArrowClick() {
     replaceMainPhotoWithThumbnail(thumbnail);
 }
 
-// function replaceMainPhotoWithThumbnail(thumbnail) {
-//     thumbnail.classList.add('current-thumbnail');
-//     main_photo.setAttribute('src', thumbnail.src);
-//     main_photo.setAttribute('alt', thumbnail.alt);
-//     main_photo.setAttribute('data-index', thumbnail.dataset.index);
-// }
-
 
 // Old way
 // // Grab the main photo so we can change it when the user clicks on a thumbnail
