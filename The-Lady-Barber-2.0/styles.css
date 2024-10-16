@@ -44,7 +44,7 @@ hr { border: 0.75px solid black; }
     padding-bottom: 1rem;
 }
 
-#about, #services, #location-hours, #gallery, #footer { font-size: 1.75rem; }
+#about, #services, #location-hours, #gallery, #footer { font-size: 1.25rem; }
 
 #main-photo {
     height: 250px;
