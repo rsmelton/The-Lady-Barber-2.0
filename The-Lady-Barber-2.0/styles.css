@@ -89,6 +89,8 @@ hr { border: 0.75px solid black; }
 
 .flex-column-vertically-centered { justify-content: center; }
 
+.flex-medium-gap { gap: 3rem; }
+
 .flex-small-gap { gap: 1rem; }
 
 .flex-xsmall-gap { gap: 0.1rem; }
