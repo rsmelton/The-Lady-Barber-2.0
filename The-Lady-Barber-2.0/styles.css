@@ -89,7 +89,7 @@ hr { border: 0.75px solid black; }
 
 .flex-column-vertically-centered { justify-content: center; }
 
-.flex-medium-gap { gap: 3rem; }
+.flex-medium-gap { gap: 2rem; }
 
 .flex-small-gap { gap: 1rem; }
 
@@ -169,6 +169,20 @@ hr { border: 0.75px solid black; }
 
 /* Hours and Location section classes */
 /* .hours-text-font-size { font-size: 1.5rem; } */
+
+.location-container { 
+    min-width: 350px;
+    max-width: 400px; 
+}
+
+.hours-container {
+    /* border: 1px solid red; */
+    padding: 0.5rem;
+    background-color: #EEEEEE;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    min-width: 350px;
+    max-width: 400px;
+}
 
 .google-map {
     width: 350px;
