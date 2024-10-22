@@ -144,7 +144,7 @@ hr { border: 0.75px solid rgba(0,0,0,0.2); }
 
 /* About section classes */
 
-.about-container, .services-container, .location-hours-container, .gallery-container { padding: 2.5rem; }
+.about-container, .services-container, .location-hours-container, .gallery-container { padding: 2.5rem; background-color: var(--primary-color); box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); }
 
 .the-lady-barber-logo { 
     width: 4rem;
@@ -158,7 +158,7 @@ hr { border: 0.75px solid rgba(0,0,0,0.2); }
     border-radius: 5%;
 }
 
-.about-text-container { min-width: 50%; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); background-color: var(--primary-color);}
+.about-text-container { min-width: 50%; background-color: var(--primary-color);}
 
 .google-facebook-logo {
     width: 40px;
@@ -168,13 +168,9 @@ hr { border: 0.75px solid rgba(0,0,0,0.2); }
 /* Services section classes */
 
 .service-card {
-    /* border: 1px solid red; */
     border-radius: 2.5%;
-    /* background-color: rgb(209, 208, 232); */
-    background-color: var(--primary-color);
-    /* background-color: rgb(13, 155, 231); */
-    /* color: white; */
-    padding: 2.5rem;
+    background-color: var(--secondary-color);
+    padding: 1rem;
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
 
@@ -202,10 +198,10 @@ hr { border: 0.75px solid rgba(0,0,0,0.2); }
 .hours-container {
     /* border: 1px solid red; */
     padding: 0.5rem;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-    min-width: 350px;
-    max-width: 350px;
+    /* min-width: 350px;
+    max-width: 350px; */
 }
 
 .google-map {
@@ -245,7 +241,7 @@ hr { border: 0.75px solid rgba(0,0,0,0.2); }
 } */
 
 .gallery-arrow-container {
-    background-color: #EEEEEE;
+    background-color: #EC9536;
     border-radius: 50%;
     padding: 1rem;
     cursor: pointer;
