@@ -34,7 +34,7 @@ a {
 a:hover { color: rgb(13, 155, 231); }
 
 /* hr { border: 0.75px solid black; } */
-hr { border: 0.75px solid black; }
+hr { border: 0.75px solid rgba(0,0,0,0.2); }
 
 /* ID selectors */
 #page_content { overflow: auto; }
@@ -100,6 +100,33 @@ hr { border: 0.75px solid black; }
 
 .flex-item-equal-spacing { flex: 1 }
 
+/* Grid classes */
+.grid { display: grid; }
+
+.grid-template-rows { grid-template-rows: repeat(5, 100px); }
+
+.grid-template-columns { grid-template-columns: repeat(1, 1fr); }
+
+.grid-template-areas { grid-template-areas: "beard-trim"
+                                            "shave"
+                                            "haircut"
+                                            "haircut-shampoo"
+                                            "haircut-trim"; 
+}
+
+.grid-gap { gap: 20px; }
+
+.beard-trim { grid-area: beard-trim; }
+
+.shave { grid-area: shave; }
+
+.haircut { grid-area: haircut; }
+
+.haircut-shampoo { grid-area: haircut-shampoo; }
+
+.haircut-trim { grid-area: haircut-trim; }
+
+
 /* Utility classes */
 .full-width { width: 100%; }
 
@@ -151,6 +178,8 @@ hr { border: 0.75px solid black; }
     border-radius: 2.5%;
     /* background-color: rgb(209, 208, 232); */
     background-color: #EEEEEE;
+    /* background-color: rgb(13, 155, 231);
+    color: white; */
     padding: 1.5rem;
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
@@ -171,10 +200,10 @@ hr { border: 0.75px solid black; }
 /* Hours and Location section classes */
 /* .hours-text-font-size { font-size: 1.5rem; } */
 
-.location-container { 
+/* .location-container { 
     min-width: 350px;
     max-width: 400px; 
-}
+} */
 
 .hours-container {
     /* border: 1px solid red; */
@@ -255,9 +284,28 @@ hr { border: 0.75px solid black; }
     }
 }
 
+/* This media query is specifically for the services section */
+/* @media (min-width: 500px) {
+    .grid-template-rows { grid-template-rows: repeat(2, 100px); }
+
+    .grid-template-columns { grid-template-columns: repeat(6, 1fr); }
+
+    .grid-template-areas { grid-template-areas: "beard-trim beard-trim shave shave haircut haircut"
+                                            "haircut-shampoo haircut-shampoo haircut-shampoo haircut-trim haircut-trim haircut-trim"; 
+    }
+} */
+
 @media (min-width: 600px) {
     #main-photo {
         height: 400px;
+    }
+
+    .grid-template-rows { grid-template-rows: repeat(2, 100px); }
+
+    .grid-template-columns { grid-template-columns: repeat(6, 1fr); }
+
+    .grid-template-areas { grid-template-areas: "beard-trim beard-trim shave shave haircut haircut"
+                                            "haircut-shampoo haircut-shampoo haircut-shampoo haircut-trim haircut-trim haircut-trim"; 
     }
 }
 
