@@ -89,7 +89,7 @@ hr { border: 1px solid rgba(0,0,0,0.2); margin: 1rem; }
 
 .flex-small-gap { gap: 1rem; }
 
-.flex-xsmall-gap { gap: 0.1rem; }
+.flex-xsmall-gap { gap: 0.3rem; }
 
 .flex-wrap { flex-wrap: wrap; }
 
@@ -164,8 +164,9 @@ hr { border: 1px solid rgba(0,0,0,0.2); margin: 1rem; }
 .about-text-container { min-width: 50%; }
 
 .google-facebook-logo {
-    width: 30px;
+    width: 40px;
     height: auto;
+    padding: 0.3rem;
 }
 
 /* Services section classes */
