@@ -34,7 +34,7 @@ a {
 a:hover { color: rgb(13, 155, 231); }
 
 /* hr { border: 0.75px solid black; } */
-hr { border: 0.75px solid rgba(0,0,0,0.2); }
+hr { border: 1px solid rgba(0,0,0,0.2); }
 
 /* ID selectors */
 #page_content { overflow: auto; }
@@ -143,8 +143,8 @@ hr { border: 0.75px solid rgba(0,0,0,0.2); }
 .navlink { box-shadow: 0 0.1rem black; }
 
 /* About section classes */
-
-.about-container, .services-container, .location-hours-container, .gallery-container { padding: 2.5rem; background-color: var(--primary-color); box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); }
+.about-container, .services-container, .location-hours-container, .gallery-container { padding: 2.5rem; }
+/* .about-container, .services-container, .location-hours-container, .gallery-container { padding: 2.5rem; background-color: var(--primary-color); box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); } */
 
 .the-lady-barber-logo { 
     width: 4rem;
@@ -158,7 +158,7 @@ hr { border: 0.75px solid rgba(0,0,0,0.2); }
     border-radius: 5%;
 }
 
-.about-text-container { min-width: 50%; background-color: var(--primary-color);}
+.about-text-container { min-width: 50%; }
 
 .google-facebook-logo {
     width: 40px;
@@ -169,9 +169,9 @@ hr { border: 0.75px solid rgba(0,0,0,0.2); }
 
 .service-card {
     border-radius: 2.5%;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     padding: 1rem;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    /* box-shadow: 0 4px 6px rgba(0,0,0,0.2); */
 }
 
 .service-icon {
@@ -198,8 +198,8 @@ hr { border: 0.75px solid rgba(0,0,0,0.2); }
 .hours-container {
     /* border: 1px solid red; */
     padding: 0.5rem;
-    background-color: var(--secondary-color);
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    background-color: var(--primary-color);
+    /* box-shadow: 0 4px 6px rgba(0,0,0,0.2); */
     /* min-width: 350px;
     max-width: 350px; */
 }
@@ -241,7 +241,7 @@ hr { border: 0.75px solid rgba(0,0,0,0.2); }
 } */
 
 .gallery-arrow-container {
-    background-color: #EC9536;
+    background-color: #EEEEEE;
     border-radius: 50%;
     padding: 1rem;
     cursor: pointer;
@@ -279,13 +279,13 @@ hr { border: 0.75px solid rgba(0,0,0,0.2); }
         height: 400px;
     }
 
-    .grid-template-rows { grid-template-rows: repeat(2, 100px); }
+    /* .grid-template-rows { grid-template-rows: repeat(2, 100px); }
 
     .grid-template-columns { grid-template-columns: repeat(6, 1fr); }
 
     .grid-template-areas { grid-template-areas: "beard-trim beard-trim shave shave haircut haircut"
                                             "haircut-shampoo haircut-shampoo haircut-shampoo haircut-trim haircut-trim haircut-trim"; 
-    }
+    } */
 }
 
 @media (min-width: 800px) {
