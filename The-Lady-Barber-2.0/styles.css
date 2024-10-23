@@ -44,7 +44,8 @@ hr { border: 1px solid rgba(0,0,0,0.2); margin: 1rem; }
     box-shadow: 0px 0px 6px rgba(0,0,0,0.2);
 }
 
-#about, #services, #location-hours, #gallery, #footer { font-size: 1.25rem; }
+#about, #services, #location, #hours, #gallery, #footer { font-size: 1.25rem; }
+/* #about, #services, #location-hours, #gallery, #footer { font-size: 1.25rem; } */
 
 #main-photo {
     height: 250px;
