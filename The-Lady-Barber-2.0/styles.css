@@ -135,6 +135,8 @@ hr { border: 1px solid rgba(0,0,0,0.2); margin: 1rem; }
 
 .small-right-padding { padding-right: 1rem; }
 
+.small-bottom-padding { padding-bottom: 1rem; }
+
 .small-left-padding { padding-left: 1rem; }
 
 .whitespace-nowrap { white-space: nowrap; }
