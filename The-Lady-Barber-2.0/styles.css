@@ -34,7 +34,7 @@ a {
 a:hover { color: rgb(13, 155, 231); }
 
 /* hr { border: 0.75px solid black; } */
-hr { border: 1px solid rgba(0,0,0,0.2); }
+hr { border: 1px solid rgba(0,0,0,0.2); margin: 1rem; }
 
 /* ID selectors */
 #page_content { overflow: auto; }
