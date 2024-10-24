@@ -36,6 +36,8 @@ a:hover { color: rgb(13, 155, 231); }
 /* hr { border: 0.75px solid black; } */
 hr { border: 1px solid rgba(0,0,0,0.2); margin: 1rem; }
 
+h3 { background-color: #EEEEEE; }
+
 /* ID selectors */
 #page_content { overflow: auto; }
 
@@ -249,11 +251,19 @@ hr { border: 1px solid rgba(0,0,0,0.2); margin: 1rem; }
     border-radius: 50%;
     padding: 1rem;
     cursor: pointer;
+    /* user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none; */
 }
 
 .gallery-arrow-icon {
     width: 10px;
     height: auto;
+    outline: none;
+    /* user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none; */
+    /* -webkit-touch-callout: none; */
 }
 
 .thumbnail {
