@@ -34,9 +34,9 @@ a {
 a:hover { text-decoration: underline; }
 
 /* hr { border: 0.75px solid black; } */
-hr { border: 1px solid rgba(0,0,0,0.2); margin: 1rem; }
+/* hr { border: 1px solid rgba(0,0,0,0.2); margin: 1rem; } */
 
-h3 { background: transparent; }
+/* h3 { background-color: #EEEEEE; } */
 
 /* ID selectors */
 #page_content { overflow: auto; }
