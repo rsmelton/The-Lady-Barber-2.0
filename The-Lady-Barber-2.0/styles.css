@@ -99,6 +99,8 @@ h3 { background-color: #EEEEEE; }
 
 .flex-item-equal-spacing { flex: 1 }
 
+.flex-grow { flex-grow: 1; }
+
 /* Grid classes */
 .grid { display: grid; }
 
