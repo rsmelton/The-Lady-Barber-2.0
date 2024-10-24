@@ -33,7 +33,7 @@ a {
 /* a:hover { color: tan; } */
 a:hover { text-decoration: underline; }
 
-/* hr { border: 0.75px solid black; } */
+hr { border: 1px solid #CCCCCC; }
 /* hr { border: 1px solid rgba(0,0,0,0.2); margin: 1rem; } */
 
 /* h3 { background-color: #EEEEEE; } */
