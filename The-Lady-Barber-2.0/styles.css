@@ -104,7 +104,7 @@ hr { border: 1px solid #DDDDDD; }
 .flex-grow { flex-grow: 1; }
 
 /* Grid classes */
-.grid { display: grid; text-align: center; gap: 0.1rem; }
+.grid { display: grid; gap: 0.1rem; }
 
 .grid-template-rows { grid-template-rows: repeat(2, 100px); }
 
@@ -224,11 +224,11 @@ hr { border: 1px solid #DDDDDD; }
     max-width: 350px; */
 }
 
-.day-grid-item { background-color: #EEEEEE; align-self: center; }
+.day-grid-item { background-color: #EEEEEE; text-align: center; align-content: center; padding: 0.5rem; }
 
-.open-hours-grid-item { background-color: #D8FFDD; align-self: center; }
+.open-hours-grid-item { background-color: #D8FFDD; text-align: center; align-content: center; padding: 0.5rem; }
 
-.closed-hours-grid-item { background-color: #FFD8D9; align-self: center; }
+.closed-hours-grid-item { background-color: #FFD8D9; text-align: center; align-content: center; padding: 0.5rem; }
 
 .google-map {
     width: 350px;
