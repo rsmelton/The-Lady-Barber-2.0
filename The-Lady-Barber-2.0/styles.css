@@ -44,6 +44,8 @@ hr { border: 1px solid #DDDDDD; }
 #navbar { 
     padding-bottom: 1rem;
     box-shadow: 0px 0px 6px rgba(0,0,0,0.2);
+    background-color: #f0f8ff;
+    /* background-color: #B3EBF2; */
 }
 
 /* #about, #services, #location, #hours, #gallery, #footer { font-size: 1.25rem; } */
@@ -61,7 +63,7 @@ hr { border: 1px solid #DDDDDD; }
 /* #services { background-color: #54d8e7; } */
 /* #hours-location { background-color: var(--secondary-color); }  */
 
-/* #footer { padding: 1rem; } */
+#footer { background-color: #f0f8ff; padding: 1rem 0; }
 
 /* Debugging classes */
 /* .border-debugger { border: 1px solid red; } */
@@ -102,9 +104,18 @@ hr { border: 1px solid #DDDDDD; }
 .flex-grow { flex-grow: 1; }
 
 /* Grid classes */
-.grid { display: grid; }
+.grid { display: grid; text-align: center; gap: 0.1rem; }
 
-.grid-template-rows { grid-template-rows: repeat(5, 100px); }
+.grid-template-rows { grid-template-rows: repeat(2, 100px); }
+
+.grid-template-columns { grid-template-columns: repeat(3, 1fr); }
+
+.grid-horizontally-center-align-items  { text-align: center; }
+
+.grid-vertically-center-align-items  { align-items: center; }
+
+
+/* .grid-template-rows { grid-template-rows: repeat(5, 100px); }
 
 .grid-template-columns { grid-template-columns: repeat(1, 1fr); }
 
@@ -113,7 +124,7 @@ hr { border: 1px solid #DDDDDD; }
                                             "haircut"
                                             "haircut-shampoo"
                                             "haircut-trim"; 
-}
+} */
 
 .grid-gap { gap: 20px; }
 
@@ -129,21 +140,20 @@ hr { border: 1px solid #DDDDDD; }
 
 
 /* Utility classes */
-.full-width { width: 100%; }
 
 .larger-text { font-size: 1.1rem; }
 
 .centered-text { text-align: center; }
 
-.small-top-bottom-padding { padding: 1rem 0; }
+.small-top-bottom-padding { padding: 2rem 0; }
 
-.small-top-padding { padding-top: 1rem; }
+.small-top-padding { padding-top: 2rem; }
 
-.small-right-padding { padding-right: 1rem; }
+.small-right-padding { padding-right: 2rem; }
 
-.small-bottom-padding { padding-bottom: 1rem; }
+.small-bottom-padding { padding-bottom: 2rem; }
 
-.small-left-padding { padding-left: 1rem; }
+.small-left-padding { padding-left: 2rem; }
 
 .whitespace-nowrap { white-space: nowrap; }
 
@@ -213,6 +223,12 @@ hr { border: 1px solid #DDDDDD; }
     /* min-width: 350px;
     max-width: 350px; */
 }
+
+.day-grid-item { background-color: #EEEEEE; align-self: center; padding: 2.5rem; }
+
+.open-hours-grid-item { background-color: #D8FFDD; align-self: center; padding: 2.5rem; }
+
+.closed-hours-grid-item { background-color: #FFD8D9; align-self: center; padding: 2.5rem; }
 
 .google-map {
     width: 350px;

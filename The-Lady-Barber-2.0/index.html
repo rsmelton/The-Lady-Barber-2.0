@@ -137,7 +137,15 @@
                         <h3>Hours</h3>
                         <hr>
                     </div>
-                    <table>
+                    <div class="grid grid-template-rows grid-template-columns border-debugger">
+                        <span class="day-grid-item border-debugger">Sun, Mon</span>
+                        <span class="day-grid-item border-debugger">Tue - Fri</span>
+                        <span class="day-grid-item border-debugger">Sat</span>
+                        <span class="closed-hours-grid-item border-debugger">Closed</span>
+                        <span class="open-hours-grid-item border-debugger">8:30a-5p</span>
+                        <span class="open-hours-grid-item border-debugger">8:30a-noon</span>
+                    </div>
+                    <!-- <table>
                         <tr>
                             <td style="background-color: #EEEEEE; text-align: center;">Sun</td>
                             <td style="background-color: #EEEEEE; text-align: center;">Mon</td>
@@ -152,7 +160,7 @@
                             <td colspan="4" style="white-space: nowrap; background-color: #D8FFDD; text-align: center;">8:30a-5p</td>
                             <td colspan="1" style="white-space: nowrap; background-color: #D8FFDD; text-align: center;"">8:30a-noon</td>
                         </tr>
-                    </table>
+                    </table> -->
                     <!-- <div class="flex flex-row flex-item-equal-spacing flex-medium-gap hours-text-font-size hours-container border-debugger">
                         <div class="flex flex-column flex-column-vertically-centered flex-small-gap border-debugger">
                             <span class="whitespace-nowrap">Sunday, Monday</span>
@@ -169,13 +177,13 @@
             </div>
             <!-- <hr> -->
             <div id="gallery" class="flex-grow small-bottom-padding small-right-padding small-left-padding">
-                <div class="flex flex-column flex-xsmall-gap gallery-container">
+                <div class="flex flex-column flex-xsmall-gap gallery-container border-debugger">
                     <div class="flex flex-column">
-                        <h3 class="border-debugger">Gallery</h3>
+                        <h3 class="">Gallery</h3>
                         <hr>
                     </div>
                     <!-- By default this container will start at 0 so we start at the first image in the list in our switchGalleryPhoto.js file -->
-                    <div id="main-photo-container" class="flex flex-row flex-row-horizontally-centered flex-row-vertically-centered">
+                    <div id="main-photo-container" class="flex flex-row flex-row-horizontally-centered flex-row-vertically-centered small-top-padding">
                         <img id="main-photo" src="./images/gallery-images/DeonnaWSign.png" alt="Deonna w/ Business Sign" data-index="0">
                     </div>
                     <div class="flex flex-row flex-row-horizontally-centered flex-row-vertically-centered flex-xsmall-gap">
@@ -203,9 +211,9 @@
         </div>
         <!-- <hr> -->
         <!-- Footer -->
-        <footer id="footer" class="flex flex-column flex-column-horizontally-centered flex-xsmall-gap small-bottom-padding centered-text">
-            <span>&copy; 2021-2024 The Lady Barber. All rights reserved.</span>
-            <div class="flex flex-row flex-row-horizontally-centered flex-row-vertically-centered flex-xsmall-gap full-width border-debugger">
+        <footer id="footer" class="flex flex-column flex-column-horizontally-centered flex-column-vertically-centered flex-xsmall-gap border-debugger">
+            <span class="border-debugger">&copy; 2021-2024 The Lady Barber. All rights reserved.</span>
+            <div class="flex flex-row flex-row-horizontally-centered flex-row-vertically-centered flex-xsmall-gap border-debugger">
                 <a href="https://www.google.com/search?q=the+lady+barber+florence+al&oq=the+lad&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDkyBwgCEAAYjwIyBwgDEAAYjwIyBggEEEUYPNIBCDExNTBqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#lrd=0x887d37ca8553c261:0x6e29c3c10d51adee,1,,,," target="_blank"><img class="google-facebook-logo" src="./images/icons/google-color-icon.png" alt="Google Icon"></a>
                 <a href="https://www.facebook.com/DeonnaScott.LadyBarber/reviews" target="_blank"><img class="google-facebook-logo" src="./images/icons/facebook-round-color-icon.png" alt="Facebook Logo"></a>
             </div>
