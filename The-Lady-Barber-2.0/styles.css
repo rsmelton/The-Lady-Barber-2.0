@@ -3,6 +3,7 @@
     --secondary-color: white;
     --text-color: black;
     /* --secondary-color: lightsteelblue; */
+    /* #f0f8ff - light blue color */
 }
 
 * {
@@ -44,7 +45,8 @@ hr { border: 1px solid #DDDDDD; }
 #navbar { 
     padding-bottom: 1rem;
     box-shadow: 0px 0px 6px rgba(0,0,0,0.2);
-    background-color: #f0f8ff;
+    background-color: var(--primary-color);
+    /* background-color: #f0f8ff; */
     /* background-color: #B3EBF2; */
 }
 
@@ -63,7 +65,7 @@ hr { border: 1px solid #DDDDDD; }
 /* #services { background-color: #54d8e7; } */
 /* #hours-location { background-color: var(--secondary-color); }  */
 
-#footer { background-color: #f0f8ff; padding: 1rem 0; }
+#footer { background-color: var(--primary-color); padding: 1rem 0; }
 
 /* Debugging classes */
 /* .border-debugger { border: 1px solid red; } */
@@ -106,9 +108,9 @@ hr { border: 1px solid #DDDDDD; }
 /* Grid classes */
 .grid { display: grid; gap: 0.1rem; }
 
-.grid-template-rows { grid-template-rows: repeat(2, 100px); }
+.grid-template-rows { grid-template-rows: repeat(2, auto); }
 
-.grid-template-columns { grid-template-columns: repeat(3, 1fr); }
+.grid-template-columns { grid-template-columns: repeat(3, auto); }
 
 .grid-horizontally-center-align-items  { text-align: center; }
 
@@ -224,11 +226,11 @@ hr { border: 1px solid #DDDDDD; }
     max-width: 350px; */
 }
 
-.day-grid-item { background-color: #EEEEEE; text-align: center; align-content: center; padding: 0.5rem; }
+.day-grid-item { background-color: #EEEEEE; text-align: center; align-content: center; }
 
-.open-hours-grid-item { background-color: #D8FFDD; text-align: center; align-content: center; padding: 0.5rem; }
+.open-hours-grid-item { background-color: #D8FFDD; text-align: center; align-content: center; }
 
-.closed-hours-grid-item { background-color: #FFD8D9; text-align: center; align-content: center; padding: 0.5rem; }
+.closed-hours-grid-item { background-color: #FFD8D9; text-align: center; align-content: center; }
 
 .google-map {
     width: 350px;
