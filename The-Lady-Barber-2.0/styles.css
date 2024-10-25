@@ -226,11 +226,11 @@ hr { border: 1px solid #DDDDDD; }
     max-width: 350px; */
 }
 
-.day-grid-item { background-color: #EEEEEE; text-align: center; align-content: center; }
+.day-grid-item { background-color: #EEEEEE; text-align: center; align-content: center; padding: 0.5rem; }
 
-.open-hours-grid-item { background-color: #D8FFDD; text-align: center; align-content: center; }
+.open-hours-grid-item { background-color: #D8FFDD; text-align: center; align-content: center; padding: 0.5rem; }
 
-.closed-hours-grid-item { background-color: #FFD8D9; text-align: center; align-content: center; }
+.closed-hours-grid-item { background-color: #FFD8D9; text-align: center; align-content: center; padding: 0.5rem; }
 
 .google-map {
     width: 350px;
