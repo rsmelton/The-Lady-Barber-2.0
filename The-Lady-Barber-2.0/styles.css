@@ -105,12 +105,14 @@ hr { border: 1px solid #DDDDDD; }
 
 .flex-grow { flex-grow: 1; }
 
+.flex-no-grow { flex-grow: 0; }
+
 /* Grid classes */
 .grid { display: grid; gap: 0.1rem; }
 
 .grid-template-rows { grid-template-rows: repeat(2, auto); }
 
-.grid-template-columns { grid-template-columns: repeat(3, auto); }
+.grid-template-columns { grid-template-columns: 100px 150px 100px; }
 
 .grid-horizontally-center-align-items  { text-align: center; }
 
