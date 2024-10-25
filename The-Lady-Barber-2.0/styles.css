@@ -224,11 +224,11 @@ hr { border: 1px solid #DDDDDD; }
     max-width: 350px; */
 }
 
-.day-grid-item { background-color: #EEEEEE; align-self: center; padding: 2.5rem; }
+.day-grid-item { background-color: #EEEEEE; align-self: center; }
 
-.open-hours-grid-item { background-color: #D8FFDD; align-self: center; padding: 2.5rem; }
+.open-hours-grid-item { background-color: #D8FFDD; align-self: center; }
 
-.closed-hours-grid-item { background-color: #FFD8D9; align-self: center; padding: 2.5rem; }
+.closed-hours-grid-item { background-color: #FFD8D9; align-self: center; }
 
 .google-map {
     width: 350px;
