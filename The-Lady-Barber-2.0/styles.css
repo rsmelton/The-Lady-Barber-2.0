@@ -112,7 +112,7 @@ hr { border: 1px solid #DDDDDD; }
 
 .grid-template-rows { grid-template-rows: repeat(2, auto); }
 
-.grid-template-columns { grid-template-columns: 100px 150px 100px; }
+.grid-template-columns { grid-template-columns: auto auto auto; }
 
 .grid-horizontally-center-align-items  { text-align: center; }
 
@@ -149,15 +149,15 @@ hr { border: 1px solid #DDDDDD; }
 
 .centered-text { text-align: center; }
 
-.small-top-bottom-padding { padding: 2rem 0; }
+.small-top-bottom-padding { padding: 1.5rem 0; }
 
-.small-top-padding { padding-top: 2rem; }
+.small-top-padding { padding-top: 1.5rem; }
 
-.small-right-padding { padding-right: 2rem; }
+.small-right-padding { padding-right: 1.5rem; }
 
-.small-bottom-padding { padding-bottom: 2rem; }
+.small-bottom-padding { padding-bottom: 1.5rem; }
 
-.small-left-padding { padding-left: 2rem; }
+.small-left-padding { padding-left: 1.5rem; }
 
 .whitespace-nowrap { white-space: nowrap; }
 
@@ -228,7 +228,7 @@ hr { border: 1px solid #DDDDDD; }
     max-width: 350px; */
 }
 
-.day-grid-item { /*background-color: #EEEEEE;*/ background-color: #EEEEEE; text-align: center; align-content: center; padding: 0.5rem; }
+.day-grid-item { /*background-color: #EEEEEE;*/ text-align: center; align-content: center; padding: 0.5rem; text-transform: uppercase; white-space: nowrap; }
 
 .open-hours-grid-item { /*background-color: #D8FFDD;*/ background-color: #EEEEEE; text-align: center; align-content: center; padding: 0.5rem; }
 
