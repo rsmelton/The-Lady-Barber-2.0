@@ -10,9 +10,9 @@ pageContent.style.height = (document.documentElement.scrollHeight - navbarHeight
 //     pageContent.style.height = (window.innerHeight - navbarHeight) + 'px';
 // });
 
-window.onload(() => {
+window.onload = () => {
     pageContent.style.height = (document.documentElement.scrollHeight - navbarHeight) + 'px';
-});
+};
 
 window.addEventListener('resize', () => {
     pageContent.style.height = (document.documentElement.scrollHeight - navbarHeight) + 'px';
