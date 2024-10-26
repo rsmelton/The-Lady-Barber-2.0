@@ -112,7 +112,11 @@ hr { border: 1px solid #DDDDDD; }
 
 .grid-template-rows { grid-template-rows: repeat(2, auto); }
 
-.grid-template-columns { grid-template-columns: auto auto auto; }
+.grid-template-columns { grid-template-columns: 2fr 3fr 1fr; }
+
+/* .grid-template-rows { grid-template-rows: repeat(2, auto); } */
+
+/* .grid-template-columns { grid-template-columns: auto auto auto; } */
 
 .grid-horizontally-center-align-items  { text-align: center; }
 
