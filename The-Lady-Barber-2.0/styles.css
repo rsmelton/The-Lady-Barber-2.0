@@ -1,6 +1,7 @@
 :root {
     --primary-color: #EEEEEE;
     --secondary-color: white;
+    --tertiary-color: #f0f8ff;
     --text-color: black;
     /* --secondary-color: lightsteelblue; */
     /* #f0f8ff - light blue color */
@@ -45,7 +46,9 @@ hr { border: 1px solid #DDDDDD; }
 #navbar { 
     padding-bottom: 1rem;
     /* box-shadow: 0px 0px 6px rgba(0,0,0,0.2); */
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */
+    background: linear-gradient(90deg, var(--primary-color) 5%, rgb(56, 113, 224) 100%);
+    /* background-color: linear-gradient(90deg, rgba(238,238,238,1) 10%, rgba(240,248,255,1) 100%); */
     /* background-color: #f0f8ff; */
     /* background-color: #B3EBF2; */
 }
