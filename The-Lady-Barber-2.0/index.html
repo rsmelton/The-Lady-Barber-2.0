@@ -187,16 +187,16 @@
             </div>
             <!-- <hr> -->
             <div id="gallery" class="flex-grow small-bottom-padding small-right-padding small-left-padding">
-                <div class="flex flex-column flex-xsmall-gap gallery-container border-debugger">
-                    <div class="flex flex-column">
-                        <h3 class="">Gallery</h3>
-                        <hr>
-                    </div>
-                    <!-- By default this container will start at 0 so we start at the first image in the list in our switchGalleryPhoto.js file -->
-                    <div id="main-photo-container" class="flex flex-row flex-row-horizontally-centered flex-row-vertically-centered small-top-padding">
+                <div class="flex flex-column">
+                    <h3 class="">Gallery</h3>
+                    <hr>
+                </div>
+                <div class="flex flex-column flex-column-horizontally-centered flex-xsmall-gap gallery-container border-debugger">
+                <!-- By default this container will start at 0 so we start at the first image in the list in our switchGalleryPhoto.js file -->
+                    <div id="main-photo-container" class="flex flex-row flex-row-vertically-centered small-top-padding">
                         <img id="main-photo" src="./images/gallery-images/DeonnaWSign.png" alt="Deonna w/ Business Sign" data-index="0">
                     </div>
-                    <div class="flex flex-row flex-row-horizontally-centered flex-row-vertically-centered flex-xsmall-gap">
+                    <div class="flex flex-row flex-row-vertically-centered flex-xsmall-gap">
                         <div class="flex gallery-arrow-container" onclick="onGalleryLeftArrowClick()">
                             <img class="gallery-arrow-icon" src="./images/gallery-images/icons/line-angle-left-icon.png" alt="Left Arrow Icon">
                         </div>
@@ -204,7 +204,7 @@
                             <img class="gallery-arrow-icon" src="./images/gallery-images/icons/line-angle-right-icon.png" alt="Right Arrow Icon">
                         </div>
                     </div>
-                    <div id="thumbnail-container" class="flex flex-row flex-row-horizontally-centered flex-wrap">
+                    <div id="thumbnail-container" class="flex flex-row">
                         <img src="./images/gallery-images/DeonnaWSign.png" alt="Deonna w/ Business Sign" class="thumbnail" onclick="onThumbnailClick(this)" data-index="0">
                         <img src="./images/gallery-images/TheLadyBarberShop.png" alt="Outside of Shop" class="thumbnail" onclick="onThumbnailClick(this)" data-index="1">
                         <img src="./images/gallery-images/LadyBarberHours.png" alt="Hours of Operation" class="thumbnail" onclick="onThumbnailClick(this)" data-index="2">

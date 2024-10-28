@@ -48,9 +48,7 @@ hr { border: 1px solid #DDDDDD; }
     /* box-shadow: 0px 0px 6px rgba(0,0,0,0.2); */
     /* background-color: var(--primary-color); */
     background: linear-gradient(90deg, var(--primary-color) 5%, rgb(56, 113, 224) 100%);
-    /* background-color: linear-gradient(90deg, rgba(238,238,238,1) 10%, rgba(240,248,255,1) 100%); */
-    /* background-color: #f0f8ff; */
-    /* background-color: #B3EBF2; */
+    /* background: linear-gradient(0deg, var(--primary-color) 5%, rgb(56, 113, 224) 100%); */
 }
 
 /* #about, #services, #location, #hours, #gallery, #footer { font-size: 1.25rem; } */
@@ -62,7 +60,7 @@ hr { border: 1px solid #DDDDDD; }
     border-radius: 5%;
 }
 
-#thumbnail-container { gap: 0.4rem; }
+#thumbnail-container { gap: 0.4rem; width: 180px; overflow-x: auto; scroll-behavior: smooth; }
 
 /* #about { background-color: var(--secondary-color); } */
 /* #services { background-color: #54d8e7; } */
@@ -95,6 +93,8 @@ hr { border: 1px solid #DDDDDD; }
 .flex-column-horizontally-centered { align-items: center; }
 
 .flex-column-vertically-centered { justify-content: center; }
+
+.flex-column-left-justified { align-items: flex-start; }
 
 .flex-medium-gap { gap: 2rem; }
 
@@ -314,16 +314,16 @@ hr { border: 1px solid #DDDDDD; }
 /* Footer classes */
 /* .footer-text-font-size { font-size: 1.25rem; } */
 
-@media (min-width: 400px) {
+/* @media (min-width: 400px) {
     #main-photo {
         height: 275px;
     }
-}
+} */
 
 @media (min-width: 600px) {
-    #main-photo {
+    /* #main-photo {
         height: 400px;
-    }
+    } */
 
     /* .grid-template-rows { grid-template-rows: repeat(2, 100px); }
 
@@ -334,8 +334,9 @@ hr { border: 1px solid #DDDDDD; }
     } */
 }
 
-@media (min-width: 800px) {
+/* @media (min-width: 800px) {
     #main-photo {
         height: 525px;
+        height: 250px;
     }
-}
+} */
