@@ -57,6 +57,7 @@ hr { border: 1px solid #DDDDDD; }
 #main-photo-container {
     position: relative;
     width: 100%;
+    background-color: lightblue;
     /* height: 450px; */
     /* position: relative; */
     padding-top: 56.25%;
