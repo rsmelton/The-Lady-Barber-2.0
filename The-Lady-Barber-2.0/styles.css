@@ -55,21 +55,23 @@ hr { border: 1px solid #DDDDDD; }
 /* #about, #services, #location-hours, #gallery, #footer { font-size: 1.25rem; } */
 
 #main-photo-container {
-    width: 100%;
-    height: 400px;
     position: relative;
-    padding-top: 0%;
+    width: 100%;
+    /* height: 450px; */
+    /* position: relative; */
+    padding-top: 56.25%;
+    /* border: 1px solid red; */
 }
 
 #main-photo {
     /* width: 100%;
-    max-height: 400px;
-    object-fit: contain; */
+    max-height: 500px; */
+    object-fit: contain;
 
-    max-width: 100%;
+    /* max-width: 100%;
     max-height: 100%;
     display: block;
-    margin: auto;
+    margin: auto; */
 
     /* border-radius: 5%; */
 }
@@ -83,7 +85,7 @@ hr { border: 1px solid #DDDDDD; }
 #footer { background-color: var(--primary-color); padding: 1rem 0; }
 
 /* Debugging classes */
-.border-debugger { border: 1px solid red; }
+/* .border-debugger { border: 1px solid red; } */
 
 /* Flexbox classes */
 .flex { display: flex; }
