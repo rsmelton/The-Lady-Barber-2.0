@@ -55,7 +55,7 @@ hr { border: 1px solid #DDDDDD; }
 /* #about, #services, #location-hours, #gallery, #footer { font-size: 1.25rem; } */
 
 #main-photo-container {
-    position: relative;
+    /* position: relative; */
     /* width: 100%; */
     width: 320px;
     height: 180px;
