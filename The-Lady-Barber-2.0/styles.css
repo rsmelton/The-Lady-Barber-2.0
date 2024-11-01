@@ -146,6 +146,7 @@ hr { border: 1px solid #DDDDDD; }
 .gallery-widget-grid {
     display: grid;
     grid-template-columns: auto;
+    background-color: var(--primary-color);
 }
 
 .gallery-widget-layer { 
@@ -175,9 +176,9 @@ hr { border: 1px solid #DDDDDD; }
     margin: auto;
 }
 
-.left-arrow { margin-left: 1rem; }
+.left-arrow { margin-left: 2rem; }
 
-.right-arrow { margin-right: 1rem; }
+.right-arrow { margin-right: 2rem; }
 
 .thumbnail {
     height: 75px;
