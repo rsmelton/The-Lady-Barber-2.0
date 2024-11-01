@@ -3,8 +3,6 @@
     --secondary-color: white;
     --tertiary-color: #90c9fb;
     --text-color: black;
-    /* --secondary-color: lightsteelblue; */
-    /* #f0f8ff - light blue color */
 }
 
 * {
@@ -18,8 +16,6 @@ html {
     font-size: 100%; 
     font-family: sans-serif;
     color: var(--text-color);
-    /* scroll-behavior: smooth; */
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 
 body { height: 100%; background-color: var(--secondary-color);}
@@ -32,27 +28,17 @@ a {
     text-decoration: none;
 }
 
-/* a:hover { color: tan; } */
 a:hover { text-decoration: underline; }
 
 hr { border: 1px solid #DDDDDD; }
-/* hr { border: 1px solid rgba(0,0,0,0.2); margin: 1rem; } */
-
-/* h3 { background-color: #EEEEEE; } */
 
 /* ID selectors */
 #page_content { overflow: auto; }
 
 #navbar { 
     padding-bottom: 1rem;
-    /* box-shadow: 0px 0px 6px rgba(0,0,0,0.2); */
-    /* background-color: var(--primary-color); */
     background: linear-gradient(90deg, var(--primary-color) 5%, var(--tertiary-color) 100%);
-    /* background: linear-gradient(0deg, var(--primary-color) 5%, rgb(56, 113, 224) 100%); */
 }
-
-/* #about, #services, #location, #hours, #gallery, #footer { font-size: 1.25rem; } */
-/* #about, #services, #location-hours, #gallery, #footer { font-size: 1.25rem; } */
 
 #main-photo-container {
     position: relative;
@@ -60,29 +46,13 @@ hr { border: 1px solid #DDDDDD; }
     aspect-ratio: 16 / 9;
 }
 
-.parent {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.child { 
-    grid-row-start: 1;
-    grid-column-start: 1;
-}
-
 #main-photo {
-    position: absolute;
     width: 100%; 
     height: 100%;
     object-fit: contain;
-    /* border-radius: 5%; */
 }
 
 #thumbnail-container { gap: 0.4rem; overflow-x: auto; scroll-behavior: smooth; padding: 0.3rem 0; }
-
-/* #about { background-color: var(--secondary-color); } */
-/* #services { background-color: #54d8e7; } */
-/* #hours-location { background-color: var(--secondary-color); }  */
 
 #footer { background-color: var(--primary-color); padding: 1rem 0; }
 
@@ -128,46 +98,6 @@ hr { border: 1px solid #DDDDDD; }
 
 .flex-no-grow { flex-grow: 0; }
 
-/* Grid classes */
-.grid { display: grid; gap: 0.1rem; }
-
-.grid-template-rows { grid-template-rows: repeat(2, auto); }
-
-.grid-template-columns { grid-template-columns: 2fr 3fr 1fr; }
-
-/* .grid-template-rows { grid-template-rows: repeat(2, auto); } */
-
-/* .grid-template-columns { grid-template-columns: auto auto auto; } */
-
-.grid-horizontally-center-align-items  { text-align: center; }
-
-.grid-vertically-center-align-items  { align-items: center; }
-
-
-/* .grid-template-rows { grid-template-rows: repeat(5, 100px); }
-
-.grid-template-columns { grid-template-columns: repeat(1, 1fr); }
-
-.grid-template-areas { grid-template-areas: "beard-trim"
-                                            "shave"
-                                            "haircut"
-                                            "haircut-shampoo"
-                                            "haircut-trim"; 
-} */
-
-.grid-gap { gap: 20px; }
-
-.beard-trim { grid-area: beard-trim; }
-
-.shave { grid-area: shave; }
-
-.haircut { grid-area: haircut; }
-
-.haircut-shampoo { grid-area: haircut-shampoo; }
-
-.haircut-trim { grid-area: haircut-trim; }
-
-
 /* Utility classes */
 
 .larger-text { font-size: 1.1rem; }
@@ -189,13 +119,6 @@ hr { border: 1px solid #DDDDDD; }
 .whitespace-nowrap { white-space: nowrap; }
 
 /* Non-reusable classes */
-
-/* .navlink { box-shadow: 0 0.1rem black; } */
-
-/* About section classes */
-/* .about-container, .services-container, .location-hours-container, .gallery-container { padding: 2.5rem; } */
-/* .about-container, .services-container, .location-hours-container, .gallery-container { padding: 2.5rem; background-color: var(--primary-color); box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); } */
-
 .the-lady-barber-logo { 
     width: 4rem;
     height: 4rem;
@@ -208,104 +131,27 @@ hr { border: 1px solid #DDDDDD; }
     border-radius: 5%;
 }
 
-/* .about-text-container { min-width: 50%; } */
-
 .google-facebook-logo {
     width: 30px;
     height: auto;
-    /* padding: 0.3rem; */
 }
-
-/* Services section classes */
-
-.service-card {
-    border-radius: 2.5%;
-    /* background-color: var(--primary-color); */
-    padding: 1rem;
-    /* box-shadow: 0 4px 6px rgba(0,0,0,0.2); */
-}
-
-.service-icon {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin: 0.0775rem 0;
-}
-
-.service-img { 
-    width: 10rem;
-    height: 10rem;
-}
-
-/* .services-text-font-size { font-size: 1.5rem; } */
-
-/* Hours and Location section classes */
-/* .hours-text-font-size { font-size: 1.5rem; } */
-
-/* .location-container { 
-    min-width: 350px;
-    max-width: 400px; 
-} */
-
-.hours-container {
-    /* border: 1px solid red; */
-    /* padding: 0.5rem; */
-    /* background-color: var(--primary-color); */
-    /* box-shadow: 0 4px 6px rgba(0,0,0,0.2); */
-    /* min-width: 350px;
-    max-width: 350px; */
-}
-
-.day-grid-item { /*background-color: #EEEEEE;*/ text-align: center; align-content: center; padding: 0.5rem; text-transform: uppercase; white-space: nowrap; }
-
-.open-hours-grid-item { /*background-color: #D8FFDD;*/ background-color: #EEEEEE; text-align: center; align-content: center; padding: 0.5rem; }
-
-.closed-hours-grid-item { /*background-color: #FFD8D9;*/ background-color: #EEEEEE; text-align: center; align-content: center; padding: 0.5rem; color: red; }
 
 .google-map {
-    /* width: 350px;
-    height: 300px; */
     height: 250px;
     border: 1px solid black;
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
 
 /* Gallery Page classes */
-/* .gallery-photo-container { 
-    justify-content: space-evenly;
-    width: 100%;
-} */
+.gallery-widget-grid {
+    display: grid;
+    grid-template-columns: auto;
+}
 
-/* .gallery-photos {
-    width: 150px;
-    height: auto;
-    height: 200px;
-    width: auto;
-    border-radius: 5%;
-} */
-
-/* .main-photo {
-    height: 400px;
-    width: auto;
-    border-radius: 5%;
-} */
-
-/* .gallery-arrow-button {
-    padding: 1rem;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    background-color: black;
-    color: white;
-} */
-
-/* .gallery-arrow-container {
-    display: flex;
-    background-color: #EEEEEE;
-    border-radius: 50%;
-    padding: 1rem;
-    cursor: pointer;
-    z-index: 10;
-} */
+.gallery-widget-layer { 
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
 
 .gallery-arrow-container {
     display: flex;
@@ -320,8 +166,8 @@ hr { border: 1px solid #DDDDDD; }
 }
 
 .gallery-arrow-icon {
-    width: 10px;
-    height: auto;
+    /* width: 10px;
+    height: auto; */
     outline: none;
 
     width: 15px;
@@ -329,9 +175,9 @@ hr { border: 1px solid #DDDDDD; }
     margin: auto;
 }
 
-/* .left-arrow { margin-left: 12rem; }
+.left-arrow { margin-left: 1rem; }
 
-.right-arrow { margin-right: 12rem; } */
+.right-arrow { margin-right: 1rem; }
 
 .thumbnail {
     height: 75px;
@@ -340,40 +186,4 @@ hr { border: 1px solid #DDDDDD; }
     cursor: pointer;
 }
 
-.current-thumbnail {
-    /* box-shadow: 0 0.3rem #BBBBBB; */
-    box-shadow: 0 -0.3rem #EC9536;
-    /* box-shadow: 0 0.3rem var(--text-color); */
-}
-
-/* Footer classes */
-/* .footer-text-font-size { font-size: 1.25rem; } */
-
-/* @media (min-width: 400px) {
-    #main-photo {
-        height: 275px;
-    }
-} */
-
-@media (min-width: 600px) {
-    /* #main-photo {
-        height: 400px;
-    } */
-
-    /* .grid-template-rows { grid-template-rows: repeat(2, 100px); }
-
-    .grid-template-columns { grid-template-columns: repeat(6, 1fr); }
-
-    .grid-template-areas { grid-template-areas: "beard-trim beard-trim shave shave haircut haircut"
-                                            "haircut-shampoo haircut-shampoo haircut-shampoo haircut-trim haircut-trim haircut-trim"; 
-    } */
-}
-
-/* @media (min-width: 800px) {
-    #main-photo {
-        height: 525px;
-        height: 250px;
-    }
-} */
-
-.border { border: 1px solid red; }
+.current-thumbnail { box-shadow: 0 -0.3rem #EC9536; }
