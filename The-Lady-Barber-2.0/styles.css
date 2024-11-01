@@ -43,7 +43,7 @@ hr { border: 1px solid #DDDDDD; }
 #main-photo-container {
     position: relative;
     width: 100%; 
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 16 / 9;
 }
 
 #main-photo {
@@ -143,7 +143,7 @@ hr { border: 1px solid #DDDDDD; }
 }
 
 /* Gallery Page classes */
-.gallery-widget { background-color: var(--primary-color); }
+.gallery-widget { background-color: var(--primary-color); border-radius: 5%; }
 
 .gallery-widget-grid {
     display: grid;
@@ -157,7 +157,7 @@ hr { border: 1px solid #DDDDDD; }
 
 .gallery-arrow-container {
     display: flex;
-    background-color: #DDDDDD;
+    background-color: rgba(25, 25, 25, .2);
     border-radius: 50%;
     cursor: pointer;
     z-index: 10;
