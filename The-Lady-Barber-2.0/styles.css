@@ -143,10 +143,11 @@ hr { border: 1px solid #DDDDDD; }
 }
 
 /* Gallery Page classes */
+.gallery-widget { background-color: var(--primary-color); }
+
 .gallery-widget-grid {
     display: grid;
     grid-template-columns: auto;
-    background-color: var(--primary-color);
 }
 
 .gallery-widget-layer { 
@@ -156,7 +157,7 @@ hr { border: 1px solid #DDDDDD; }
 
 .gallery-arrow-container {
     display: flex;
-    background-color: #EEEEEE;
+    background-color: #DDDDDD;
     border-radius: 50%;
     cursor: pointer;
     z-index: 10;
