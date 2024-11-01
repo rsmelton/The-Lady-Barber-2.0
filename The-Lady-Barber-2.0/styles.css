@@ -316,7 +316,7 @@ hr { border: 1px solid #DDDDDD; }
 
     width: 30px;
     height: 30px;
-    /* margin: auto; */
+    margin: auto;
 }
 
 .gallery-arrow-icon {
@@ -326,7 +326,7 @@ hr { border: 1px solid #DDDDDD; }
 
     width: 15px;
     height: 15px;
-    /* margin: auto; */
+    margin: auto;
 }
 
 /* .left-arrow { margin-left: 12rem; }
