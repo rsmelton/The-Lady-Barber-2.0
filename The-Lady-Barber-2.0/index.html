@@ -193,8 +193,41 @@
                 <hr>
             </div>
             <!-- Gallery Widget -->
-            <div>
-                <div class="flex flex-row flex-row-horizontally-centered flex-row-vertically-centered flex-xsmall-gap xsmall-top-padding">
+            <div class="parent">
+                <div id="main-photo-container" class="child">
+                    <img id="main-photo" src="./images/gallery-images/DeonnaWSign.png" alt="Deonna w/ Business Sign" data-index="0">
+                </div>
+                <div class="child flex flex-row-horizontally-centered flex-row-vertically-centered" style="gap: 12rem;">
+                    <div class="flex flex-row flex-row-horizontally-centered flex-row-vertically-centered gallery-arrow-container left-arrow" onclick="onGalleryLeftArrowClick()">
+                        <img class="gallery-arrow-icon" src="./images/gallery-images/icons/line-angle-left-icon.png" alt="Left Arrow Icon">
+                    </div>
+                    <div class="flex flex-row flex-row-horizontally-centered flex-row-vertically-centered gallery-arrow-container right-arrow" onclick="onGalleryRightArrowClick()">
+                        <img class="gallery-arrow-icon" src="./images/gallery-images/icons/line-angle-right-icon.png" alt="Right Arrow Icon">
+                    </div>
+                </div>
+                <!-- <div class="flex flex-row flex-row-horizontally-centered flex-row-vertically-centered">
+                    <div class="child flex flex-row flex-row-vertically-centered gallery-arrow-container left-arrow" onclick="onGalleryLeftArrowClick()">
+                        <img class="gallery-arrow-icon" src="./images/gallery-images/icons/line-angle-left-icon.png" alt="Left Arrow Icon">
+                    </div>
+                    <div id="main-photo-container" class="child">
+                        <img id="main-photo" src="./images/gallery-images/DeonnaWSign.png" alt="Deonna w/ Business Sign" data-index="0">
+                    </div>
+                    <div class="child flex flex-row flex-row-vertically-centered gallery-arrow-container right-arrow" onclick="onGalleryRightArrowClick()">
+                        <img class="gallery-arrow-icon" src="./images/gallery-images/icons/line-angle-right-icon.png" alt="Right Arrow Icon">
+                    </div>
+                </div> -->
+                <!-- <div class="flex flex-row flex-row-horizontally-centered flex-row-vertically-centered small-top-padding border">
+                    <div class="child gallery-arrow-container left-arrow" onclick="onGalleryLeftArrowClick()">
+                        <img class="gallery-arrow-icon" src="./images/gallery-images/icons/line-angle-left-icon.png" alt="Left Arrow Icon">
+                    </div>
+                    <div id="main-photo-container" class="child">
+                        <img id="main-photo" src="./images/gallery-images/DeonnaWSign.png" alt="Deonna w/ Business Sign" data-index="0">
+                    </div>
+                    <div class="child gallery-arrow-container right-arrow" onclick="onGalleryRightArrowClick()">
+                        <img class="gallery-arrow-icon" src="./images/gallery-images/icons/line-angle-right-icon.png" alt="Right Arrow Icon">
+                    </div>
+                </div> -->
+                <!-- <div class="flex flex-row flex-row-horizontally-centered flex-row-vertically-centered flex-xsmall-gap xsmall-top-padding border">
                     <div class="gallery-arrow-container" onclick="onGalleryLeftArrowClick()">
                         <img class="gallery-arrow-icon" src="./images/gallery-images/icons/line-angle-left-icon.png" alt="Left Arrow Icon">
                     </div>
@@ -204,19 +237,20 @@
                     <div class="gallery-arrow-container" onclick="onGalleryRightArrowClick()">
                         <img class="gallery-arrow-icon" src="./images/gallery-images/icons/line-angle-right-icon.png" alt="Right Arrow Icon">
                     </div>
-                </div>
-                <div id="thumbnail-container" class="flex flex-row border-debugger">
-                    <img src="./images/gallery-images/DeonnaWSign.png" alt="Deonna w/ Business Sign" class="thumbnail" onclick="onThumbnailClick(this)" data-index="0">
-                    <img src="./images/gallery-images/TheLadyBarberShop.png" alt="Outside of Shop" class="thumbnail" onclick="onThumbnailClick(this)" data-index="1">
-                    <img src="./images/gallery-images/LadyBarberHours.png" alt="Hours of Operation" class="thumbnail" onclick="onThumbnailClick(this)" data-index="2">
-                    <img src="./images/gallery-images/WaitingRoomAngle1.png" alt="Waiting Room Angle 1" class="thumbnail" onclick="onThumbnailClick(this)" data-index="3">
-                    <img src="./images/gallery-images/WaitingRoomAngle2.png" alt="Waiting Room Angle 2" class="thumbnail" onclick="onThumbnailClick(this)" data-index="4">
-                    <img src="./images/gallery-images/GuestChair.png" alt="Guest Chair" class="thumbnail" onclick="onThumbnailClick(this)" data-index="5">
-                    <img src="./images/gallery-images/BarberChair.png" alt="Barber Chair" class="thumbnail" onclick="onThumbnailClick(this)" data-index="6">
-                    <img src="./images/gallery-images/After1.png" alt="After Photo 1" class="thumbnail" onclick="onThumbnailClick(this)" data-index="7">
-                    <img src="./images/gallery-images/After2.png" alt="After Photo 2" class="thumbnail" onclick="onThumbnailClick(this)" data-index="8">
-                    <img src="./images/gallery-images/After3.png" alt="After Photo 3" class="thumbnail" onclick="onThumbnailClick(this)" data-index="9">
-                </div>
+                </div> -->
+
+            </div>
+            <div id="thumbnail-container" class="flex flex-row border-debugger">
+                <img src="./images/gallery-images/DeonnaWSign.png" alt="Deonna w/ Business Sign" class="thumbnail" onclick="onThumbnailClick(this)" data-index="0">
+                <img src="./images/gallery-images/TheLadyBarberShop.png" alt="Outside of Shop" class="thumbnail" onclick="onThumbnailClick(this)" data-index="1">
+                <img src="./images/gallery-images/LadyBarberHours.png" alt="Hours of Operation" class="thumbnail" onclick="onThumbnailClick(this)" data-index="2">
+                <img src="./images/gallery-images/WaitingRoomAngle1.png" alt="Waiting Room Angle 1" class="thumbnail" onclick="onThumbnailClick(this)" data-index="3">
+                <img src="./images/gallery-images/WaitingRoomAngle2.png" alt="Waiting Room Angle 2" class="thumbnail" onclick="onThumbnailClick(this)" data-index="4">
+                <img src="./images/gallery-images/GuestChair.png" alt="Guest Chair" class="thumbnail" onclick="onThumbnailClick(this)" data-index="5">
+                <img src="./images/gallery-images/BarberChair.png" alt="Barber Chair" class="thumbnail" onclick="onThumbnailClick(this)" data-index="6">
+                <img src="./images/gallery-images/After1.png" alt="After Photo 1" class="thumbnail" onclick="onThumbnailClick(this)" data-index="7">
+                <img src="./images/gallery-images/After2.png" alt="After Photo 2" class="thumbnail" onclick="onThumbnailClick(this)" data-index="8">
+                <img src="./images/gallery-images/After3.png" alt="After Photo 3" class="thumbnail" onclick="onThumbnailClick(this)" data-index="9">
             </div>
             <!-- <div id="main-photo-container" class="flex flex-row flex-row-horizontally-centered flex-row-vertically-centered border-debugger">
                 <img id="main-photo" src="./images/gallery-images/DeonnaWSign.png" alt="Deonna w/ Business Sign" data-index="0">
