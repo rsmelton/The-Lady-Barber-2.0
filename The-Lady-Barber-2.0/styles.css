@@ -157,7 +157,8 @@ hr { border: 1px solid #DDDDDD; }
 
 .gallery-arrow-container {
     display: flex;
-    background-color: rgba(25, 25, 25, .2);
+    /* background-color: rgba(25, 25, 25, .2); */
+    background-color: white;
     border-radius: 50%;
     cursor: pointer;
     z-index: 10;
