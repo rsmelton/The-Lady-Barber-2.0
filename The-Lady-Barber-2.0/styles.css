@@ -143,7 +143,7 @@ hr { border: 1px solid #DDDDDD; }
 }
 
 /* Gallery Page classes */
-.gallery-widget { border: 0.2rem solid #BBBBBB; border-radius: 2%; padding: 0.3rem; }
+.gallery-widget { border: 0.2rem solid #BBBBBB; border-radius: 2%; padding: 0.6rem; }
 
 .gallery-widget-grid {
     display: grid;
