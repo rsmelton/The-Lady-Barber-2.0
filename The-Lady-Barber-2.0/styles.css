@@ -52,7 +52,7 @@ hr { border: 1px solid #DDDDDD; }
     object-fit: contain;
 }
 
-#thumbnail-container { gap: 0.4rem; overflow-x: auto; scroll-behavior: smooth; padding: 0.3rem 0; }
+#thumbnail-container { gap: 0.4rem; overflow-x: auto; scroll-behavior: smooth; padding: 0.3rem 0; background-color: rgba(224, 224, 224, .5); }
 
 #footer { background-color: var(--primary-color); padding: 1rem 0; }
 
