@@ -149,9 +149,8 @@ hr { border: 1px solid #DDDDDD; }
 
 .gallery-widget-grid {
     display: grid;
-    /* grid-template-columns: auto; */
+    grid-template-columns: auto;
     margin: auto;
-    border: 1px solid red;
 }
 
 .gallery-widget-layer { 
