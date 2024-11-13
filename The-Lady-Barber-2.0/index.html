@@ -9,23 +9,15 @@
 <body>
     <!-- Navbar -->
     <nav id="navbar" class="flex flex-column flex-small-gap small-top-padding small-right-padding small-left-padding border-debugger">
-        <!-- Flex container specifically for all the navlinks -->
-        <!-- <ul class="flex flex-row flex-row-right-justified flex-small-gap flex-wrap border-debugger">
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#location-hours">Location/Hours</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-        </ul> -->
-        <!-- Flex container for logo along with a column Flex container for branding text -->
         <div class="flex flex-row flex-row-vertically-centered flex-small-gap border-debugger">
             <img class="the-lady-barber-logo" src="./images/TheLadyBarberLogo.png" alt="The Lady Barber Logo" />
             <div class="flex flex-column">
                 <h1>The Lady Barber</h1>
                 <span>256-627-6672</span>
-                <!-- <span>Call for Appointment!</span> -->
             </div>
         </div>
-        <ul class="flex flex-row flex-row-left-justified flex-small-gap flex-wrap border-debugger">
+        <!-- Navlinks -->
+        <ul class="flex flex-row flex-small-gap flex-wrap border-debugger">
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#location">Location</a></li>
@@ -35,16 +27,17 @@
     </nav>
     <div id="page_content">
         <!-- About Section -->
-        <div class="flex flex-row flex-wrap">
-            <div id="about" class="flex-grow small-top-bottom-padding small-right-padding small-left-padding">
-                <div class="flex flex-column flex-item-equal-spacing flex-small-gap border-debugger">
-                    <div class="flex flex-column">
-                        <h3>About</h3>
-                        <hr>
-                    </div>
-                    <p class="border-debugger">Hi! I'm Deonna. I am a second-generation lady barber. My mom, Jewel Fortner, was the first lady barber in Florence. In 1999, I started my career at <i>Roger's Barber Stylists</i>, where I worked for 21 years. In 2021, I branched off on my own to open <i>The Lady Barber</i>.</p>
+        <div id="about" class="flex-grow small-top-padding small-right-padding small-bottom-padding small-left-padding">
+            <div class="flex flex-column flex-small-gap border-debugger">
+                <div class="flex flex-column">
+                    <h3>About</h3>
+                    <hr>
                 </div>
+                <p class="border-debugger">Hi! I'm Deonna. I am a second-generation lady barber. My mom, Jewel Fortner, was the first lady barber in Florence. In 1999, I started my career at <i>Roger's Barber Stylists</i>, where I worked for 21 years. In 2021, I branched off on my own to open <i>The Lady Barber</i>.</p>
             </div>
+        </div>
+        <div class="flex flex-row flex-wrap">
+            <!-- Services section -->
             <div id="services" class="flex flex-column flex-small-gap small-bottom-padding small-right-padding small-left-padding flex-grow border-debugger">
                 <div class="flex flex-column">
                     <h3>Services</h3>
@@ -56,7 +49,7 @@
                         <span>Shave</span>
                         <span>Haircut</span>
                         <span>Haircut w/ Shampoo</span>
-                        <span>Haircut w/ Trim</span>
+                        <span>Haircut w/ Beard Trim</span>
                     </div>
                     <div class="flex flex-column flex-xsmall-gap border-debugger">
                         <span>$10</span>
@@ -67,6 +60,7 @@
                     </div>
                 </div>
             </div>
+            <!-- Location section -->
             <div id="location" class="flex-grow small-bottom-padding small-right-padding small-left-padding border-debugger">
                 <div class="flex flex-column flex-small-gap">
                     <div class="flex flex-column">
@@ -77,14 +71,14 @@
                     <iframe class='google-map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120292.45270792468!2d-87.80138847636925!3d34.89338120986842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x887d37ca8553c261%3A0x6e29c3c10d51adee!2sThe%20Lady%20Barber!5e0!3m2!1sen!2sus!4v1726884837492!5m2!1sen!2sus" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-            <!-- <hr> -->
+            <!-- Hours section -->
             <div id="hours" class="flex-grow small-bottom-padding small-right-padding small-left-padding border-debugger">
                 <div class="flex flex-column flex-small-gap">
                     <div class="flex flex-column">
                         <h3>Hours</h3>
                         <hr>
                     </div>
-                    <div class="flex flex-row flex-item-equal-spacing flex-medium-gap border-debugger">
+                    <div class="flex flex-row flex-medium-gap border-debugger">
                         <div class="flex flex-column flex-column-vertically-centered flex-xsmall-gap border-debugger">
                             <span class="whitespace-nowrap">Sunday & Monday</span>
                             <span class="whitespace-nowrap">Tuesday - Friday</span>
@@ -99,8 +93,8 @@
                     <span>Closed on Holidays.</span>
                 </div>
             </div>
-            <!-- <hr> -->
         </div>
+        <!-- Gallery section -->
         <div id="gallery" class="flex-grow small-bottom-padding small-right-padding small-left-padding">
             <div class="flex flex-column small-bottom-padding">
                 <h3>Gallery</h3>
@@ -134,52 +128,7 @@
                     <img src="./images/gallery-images/After3.png" alt="After Photo 3" class="thumbnail" onclick="onThumbnailClick(this)" data-index="9">
                 </div>
             </div>
-            <!-- <div id="main-photo-container" class="flex flex-row flex-row-horizontally-centered flex-row-vertically-centered border-debugger">
-                <img id="main-photo" src="./images/gallery-images/DeonnaWSign.png" alt="Deonna w/ Business Sign" data-index="0">
-            </div> -->
-            <!-- <div id="thumbnail-container" class="flex flex-row border-debugger">
-                <img src="./images/gallery-images/DeonnaWSign.png" alt="Deonna w/ Business Sign" class="thumbnail" onclick="onThumbnailClick(this)" data-index="0">
-                <img src="./images/gallery-images/TheLadyBarberShop.png" alt="Outside of Shop" class="thumbnail" onclick="onThumbnailClick(this)" data-index="1">
-                <img src="./images/gallery-images/LadyBarberHours.png" alt="Hours of Operation" class="thumbnail" onclick="onThumbnailClick(this)" data-index="2">
-                <img src="./images/gallery-images/WaitingRoomAngle1.png" alt="Waiting Room Angle 1" class="thumbnail" onclick="onThumbnailClick(this)" data-index="3">
-                <img src="./images/gallery-images/WaitingRoomAngle2.png" alt="Waiting Room Angle 2" class="thumbnail" onclick="onThumbnailClick(this)" data-index="4">
-                <img src="./images/gallery-images/GuestChair.png" alt="Guest Chair" class="thumbnail" onclick="onThumbnailClick(this)" data-index="5">
-                <img src="./images/gallery-images/BarberChair.png" alt="Barber Chair" class="thumbnail" onclick="onThumbnailClick(this)" data-index="6">
-                <img src="./images/gallery-images/After1.png" alt="After Photo 1" class="thumbnail" onclick="onThumbnailClick(this)" data-index="7">
-                <img src="./images/gallery-images/After2.png" alt="After Photo 2" class="thumbnail" onclick="onThumbnailClick(this)" data-index="8">
-                <img src="./images/gallery-images/After3.png" alt="After Photo 3" class="thumbnail" onclick="onThumbnailClick(this)" data-index="9">
-            </div> -->
-
-
-
-            <!-- <div class="flex flex-column flex-xsmall-gap border-debugger">
-            By default this container will start at 0 so we start at the first image in the list in our switchGalleryPhoto.js file
-                <div class="flex flex-row flex-row-horizontally-centered flex-row-vertically-centered flex-xsmall-gap border-debugger">
-                    <div class="flex gallery-arrow-container" onclick="onGalleryLeftArrowClick()">
-                        <img class="gallery-arrow-icon" src="./images/gallery-images/icons/line-angle-left-icon.png" alt="Left Arrow Icon">
-                    </div>
-                    <div id="main-photo-container" class="flex flex-row flex-row-horizontally-centered flex-row-vertically-centered border-debugger">
-                        <img id="main-photo" src="./images/gallery-images/DeonnaWSign.png" alt="Deonna w/ Business Sign" data-index="0">
-                    </div>
-                    <div class="flex gallery-arrow-container" onclick="onGalleryRightArrowClick()">
-                        <img class="gallery-arrow-icon" src="./images/gallery-images/icons/line-angle-right-icon.png" alt="Right Arrow Icon">
-                    </div>
-                </div>
-                <div id="thumbnail-container" class="flex flex-row border-debugger">
-                    <img src="./images/gallery-images/DeonnaWSign.png" alt="Deonna w/ Business Sign" class="thumbnail" onclick="onThumbnailClick(this)" data-index="0">
-                    <img src="./images/gallery-images/TheLadyBarberShop.png" alt="Outside of Shop" class="thumbnail" onclick="onThumbnailClick(this)" data-index="1">
-                    <img src="./images/gallery-images/LadyBarberHours.png" alt="Hours of Operation" class="thumbnail" onclick="onThumbnailClick(this)" data-index="2">
-                    <img src="./images/gallery-images/WaitingRoomAngle1.png" alt="Waiting Room Angle 1" class="thumbnail" onclick="onThumbnailClick(this)" data-index="3">
-                    <img src="./images/gallery-images/WaitingRoomAngle2.png" alt="Waiting Room Angle 2" class="thumbnail" onclick="onThumbnailClick(this)" data-index="4">
-                    <img src="./images/gallery-images/GuestChair.png" alt="Guest Chair" class="thumbnail" onclick="onThumbnailClick(this)" data-index="5">
-                    <img src="./images/gallery-images/BarberChair.png" alt="Barber Chair" class="thumbnail" onclick="onThumbnailClick(this)" data-index="6">
-                    <img src="./images/gallery-images/After1.png" alt="After Photo 1" class="thumbnail" onclick="onThumbnailClick(this)" data-index="7">
-                    <img src="./images/gallery-images/After2.png" alt="After Photo 2" class="thumbnail" onclick="onThumbnailClick(this)" data-index="8">
-                    <img src="./images/gallery-images/After3.png" alt="After Photo 3" class="thumbnail" onclick="onThumbnailClick(this)" data-index="9">
-                </div>
-            </div> -->
         </div>
-        <!-- <hr> -->
         <!-- Footer -->
         <footer id="footer" class="flex flex-column flex-column-horizontally-centered flex-column-vertically-centered flex-xsmall-gap border-debugger">
             <span class="centered-text border-debugger">&copy; 2021-2024 The Lady Barber. All rights reserved.</span>
@@ -189,24 +138,6 @@
             </div>
         </footer>
     </div>
-    <!-- Gallery Widget -->
-    <!-- <div>
-        <div id="main-photo-container">
-            <img id="main-photo" src="./images/gallery-images/DeonnaWSign.png" alt="Deonna w/ Business Sign" data-index="0">
-        </div>
-        <div id="thumbnail-container" class="flex flex-row border-debugger">
-            <img src="./images/gallery-images/DeonnaWSign.png" alt="Deonna w/ Business Sign" class="thumbnail" onclick="onThumbnailClick(this)" data-index="0">
-            <img src="./images/gallery-images/TheLadyBarberShop.png" alt="Outside of Shop" class="thumbnail" onclick="onThumbnailClick(this)" data-index="1">
-            <img src="./images/gallery-images/LadyBarberHours.png" alt="Hours of Operation" class="thumbnail" onclick="onThumbnailClick(this)" data-index="2">
-            <img src="./images/gallery-images/WaitingRoomAngle1.png" alt="Waiting Room Angle 1" class="thumbnail" onclick="onThumbnailClick(this)" data-index="3">
-            <img src="./images/gallery-images/WaitingRoomAngle2.png" alt="Waiting Room Angle 2" class="thumbnail" onclick="onThumbnailClick(this)" data-index="4">
-            <img src="./images/gallery-images/GuestChair.png" alt="Guest Chair" class="thumbnail" onclick="onThumbnailClick(this)" data-index="5">
-            <img src="./images/gallery-images/BarberChair.png" alt="Barber Chair" class="thumbnail" onclick="onThumbnailClick(this)" data-index="6">
-            <img src="./images/gallery-images/After1.png" alt="After Photo 1" class="thumbnail" onclick="onThumbnailClick(this)" data-index="7">
-            <img src="./images/gallery-images/After2.png" alt="After Photo 2" class="thumbnail" onclick="onThumbnailClick(this)" data-index="8">
-            <img src="./images/gallery-images/After3.png" alt="After Photo 3" class="thumbnail" onclick="onThumbnailClick(this)" data-index="9">
-        </div>
-    </div> -->
     <script defer src="calcPageContentHeight.js"></script>
     <script defer src="switchGalleryPhoto.js"></script>
 </body>
