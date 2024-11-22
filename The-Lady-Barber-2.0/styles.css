@@ -87,6 +87,8 @@ hr { border: 1px solid #DDDDDD; }
 /* Utility classes */
 .larger-text { font-size: 1.1rem; }
 
+.italic-text { font-style: italic; }
+
 .centered-text { text-align: center; }
 
 .small-top-padding { padding-top: 1.5rem; }
