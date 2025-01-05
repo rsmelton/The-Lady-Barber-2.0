@@ -1,93 +1,69 @@
-:root {
-    --primary-color: #EEEEEE;
-    --secondary-color: white;
-    --tertiary-color: #90c9fb;
-    --quarternary-color: rgba(210, 210, 210, .5);
-}
+:root { --primary-color: #EEEEEE;
+        --secondary-color: white;
+        --tertiary-color: #90c9fb;
+        --quarternary-color: rgba(210, 210, 210, .5); }
 
-* {
-    box-sizing: border-box;
+* { box-sizing: border-box;
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
-}
+    scroll-behavior: smooth; }
 
-html { 
-    font-size: 100%; 
-    font-family: sans-serif;
-    color: black;
-}
+html { font-size: 100%; 
+       font-family: sans-serif;
+       color: black; }
 
-body { 
-    /* height: 100%;  */
-    background-color: var(--secondary-color);
-}
+body { background-color: var(--secondary-color); }
 
-html, body {
-    height: 100%;
-}
+html, body { height: 100%; }
 
 ul { list-style: none; }
 
-a { 
-    color: rgb(56, 113, 224); 
-    text-decoration: none;
-}
+a { color: rgb(56, 113, 224); 
+    text-decoration: none; }
 
 a:hover { text-decoration: underline; }
 
 hr { border: 1px solid #DDDDDD; }
 
+/* .border-debugger { border: 1px solid red; } */
+
 /* ID selectors */
 #page_content { overflow: auto; }
 
-#navbar { 
-    padding-bottom: 1rem;
-    background: linear-gradient(90deg, var(--primary-color) 5%, var(--tertiary-color) 100%);
-}
+#navbar { padding-bottom: 1rem;
+          background: linear-gradient(90deg, var(--primary-color) 5%, var(--tertiary-color) 100%); }
 
-#footer { 
-    background-color: var(--primary-color); 
-    padding: 1rem 0; 
-}
+#footer { background-color: var(--primary-color); 
+          padding: 1rem 0; }
 
-/* Debugging classes */
-/* .border-debugger { border: 1px solid red; } */
-
-/* Flexbox classes */
 .flex { display: flex; }
 
-/* Row */
 .flex-row { flex-direction: row; }
 
 .flex-row-horizontally-centered { justify-content: center; }
 
 .flex-row-vertically-centered { align-items: center; }
 
-/* Column */
 .flex-column { flex-direction: column; }
 
 .flex-column-horizontally-centered { align-items: center; }
 
 .flex-column-vertically-centered { justify-content: center; }
 
-/* Gap */
 .flex-medium-gap { gap: 2rem; }
 
 .flex-small-gap { gap: 1rem; }
 
 .flex-xsmall-gap { gap: 0.3rem; }
 
-/* Other flex classes */
 .flex-wrap { flex-wrap: wrap; }
 
 .flex-grow { flex-grow: 1; }
 
-
 /* Utility classes */
 .larger-text { font-size: 1.1rem; }
 
-.italic-text { font-style: italic; }
+.italic { font-style: italic; }
 
 .centered-text { text-align: center; }
 
@@ -99,93 +75,71 @@ hr { border: 1px solid #DDDDDD; }
 
 .small-left-padding { padding-left: 1.5rem; }
 
-.whitespace-nowrap { white-space: nowrap; }
+.nowrap { white-space: nowrap; }
 
 /* Non-reusable classes */
-.the-lady-barber-logo { 
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-}
+.the-lady-barber-logo { width: 4rem;
+                        height: 4rem;
+                        border-radius: 50%; }
 
-.google-facebook-logo {
-    width: 30px;
-    height: auto;
-}
+.closed-text { color: red; }
 
-.google-map {
-    height: 250px;
-    border: 1px solid black;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-}
+.google-facebook-logo { width: 30px;
+                        height: auto; }
+
+.google-map { height: 250px;
+              border: 1px solid black;
+              box-shadow: 0 4px 6px rgba(0,0,0,0.2); }
 
 /* Gallery classes */
-.gallery-widget { 
-    border: 0.6rem solid var(--quarternary-color); 
-    border-radius: 2%; 
-}
+.gallery-widget { border: 0.6rem solid var(--quarternary-color); 
+                  border-radius: 2%; }
 
-.gallery-widget-grid {
-    display: grid;
-    grid-template-columns: auto;
-    margin: auto;
-}
+.gallery-widget-grid { display: grid;
+                       grid-template-columns: auto;
+                       margin: auto; }
 
-.gallery-widget-layer { 
-    grid-row-start: 1;
-    grid-column-start: 1;
-}
+.gallery-widget-layer { grid-row-start: 1;
+                        grid-column-start: 1; }
 
 /* Gallery Main Photo */
-#main-photo-container {
-    position: relative;
-    width: 100%; 
-    aspect-ratio: 16 / 9;
-}
+#main-photo-container { position: relative;
+                        width: 100%; 
+                        aspect-ratio: 16 / 9; }
 
-#main-photo {
-    width: 100%; 
-    height: 100%;
-    object-fit: contain;
-    display: block;
-}
+#main-photo { width: 100%; 
+              height: 100%;
+              object-fit: contain;
+              display: block; }
 
 /* Arrows */
-.gallery-arrow-container {
-    display: flex;
-    background-color: var(--quarternary-color);
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 10;
-    width: 60px;
-    height: 60px;
-    margin: auto;
-}
+.gallery-arrow-container { display: flex;
+                           background-color: var(--quarternary-color);
+                           border-radius: 50%;
+                           cursor: pointer;
+                           z-index: 10;
+                           width: 60px;
+                           height: 60px;
+                           margin: auto; }
 
-.gallery-arrow-icon {
-    width: 15px;
-    height: 15px;
-    margin: auto;
-}
+.gallery-arrow-icon { width: 15px;
+                      height: 15px;
+                      margin: auto; }
 
-.left-arrow { margin-left: 0.5rem; }
+.gallery-left-arrow { margin-left: 0.5rem; }
 
-.right-arrow { margin-right: 0.5rem; }
+.gallery-right-arrow { margin-right: 0.5rem; }
 
 /* Thumbnail */
-#thumbnail-container { 
-    gap: 0.4rem; 
-    overflow-x: auto; 
-    scroll-behavior: smooth; 
-    padding: 0.3rem 0; 
-    background-color: var(--quarternary-color); 
-}
+#thumbnail-container { gap: 0.4rem; 
+                       overflow-x: auto; 
+                       scroll-behavior: smooth; 
+                       padding: 0.3rem 0; 
+                       background-color: var(--quarternary-color); }
 
-.thumbnail {
-    height: 75px;
-    width: auto;
-    border-radius: 5%;
-    cursor: pointer;
-}
+.thumbnail { height: 75px;
+             width: auto;
+             border-radius: 5%;
+             cursor: pointer; }
 
 .current-thumbnail { box-shadow: 0 0.3rem #EC9536; }
