@@ -38,19 +38,7 @@ hr { border: 1px solid #DDDDDD; }
 
 .flex { display: flex; }
 
-.flex-row { flex-direction: row; }
-
-.flex-row-horizontally-centered { justify-content: center; }
-
-.flex-row-vertically-centered { align-items: center; }
-
 .flex-column { flex-direction: column; }
-
-.flex-column-horizontally-centered { align-items: center; }
-
-.flex-column-vertically-centered { justify-content: center; }
-
-.flex-medium-gap { gap: 2rem; }
 
 .flex-small-gap { gap: 1rem; }
 
@@ -61,11 +49,8 @@ hr { border: 1px solid #DDDDDD; }
 .flex-grow { flex-grow: 1; }
 
 /* Utility classes */
-.larger-text { font-size: 1.1rem; }
 
 .italic { font-style: italic; }
-
-.centered-text { text-align: center; }
 
 .small-top-padding { padding-top: 1.5rem; }
 
@@ -81,6 +66,10 @@ hr { border: 1px solid #DDDDDD; }
 .the-lady-barber-logo { width: 4rem;
                         height: 4rem;
                         border-radius: 50%; }
+
+.header-info-centered { align-items: center; }
+
+.hours-container-gap { gap: 2rem; }
 
 .closed-text { color: red; }
 
@@ -102,17 +91,15 @@ hr { border: 1px solid #DDDDDD; }
 .gallery-widget-layer { grid-row-start: 1;
                         grid-column-start: 1; }
 
-/* Gallery Main Photo */
-#main-photo-container { position: relative;
-                        width: 100%; 
-                        aspect-ratio: 16 / 9; }
+#gallery-main-photo-container { position: relative;
+                                width: 100%; 
+                                aspect-ratio: 16 / 9; }
 
-#main-photo { width: 100%; 
-              height: 100%;
-              object-fit: contain;
-              display: block; }
+#gallery-main-photo { width: 100%; 
+                      height: 100%;
+                      object-fit: contain;
+                      display: block; }
 
-/* Arrows */
 .gallery-arrow-container { display: flex;
                            background-color: var(--quarternary-color);
                            border-radius: 50%;
@@ -143,3 +130,7 @@ hr { border: 1px solid #DDDDDD; }
              cursor: pointer; }
 
 .current-thumbnail { box-shadow: 0 0.3rem #EC9536; }
+
+/* Footer classes */
+
+.footer-items-horizontal-centering { align-items: center; }

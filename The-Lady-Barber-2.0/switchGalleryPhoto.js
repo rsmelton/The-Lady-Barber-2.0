@@ -1,5 +1,5 @@
 // Grab the main photo so we can change it when the user clicks on a thumbnail
-let main_photo = document.getElementById('main-photo');
+let main_photo = document.getElementById('gallery-main-photo');
 
 // Grab all the thumbnails and throw them into the thumbnail_container
 let thumbnail_container = Array.from(document.getElementById('thumbnail-container').children);
