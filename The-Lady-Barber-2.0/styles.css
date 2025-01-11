@@ -31,6 +31,8 @@ hr { border: 1px solid #DDDDDD; }
 
 .flex-column { flex-direction: column; }
 
+.flex-align-items-center { align-items: center; }
+
 .flex-small-gap { gap: 1rem; }
 
 .flex-xsmall-gap { gap: 0.3rem; }
@@ -65,8 +67,6 @@ hr { border: 1px solid #DDDDDD; }
 .the-lady-barber-logo { width: 4rem;
                         height: 4rem;
                         border-radius: 50%; }
-
-.header-info-centered { align-items: center; }
 
 .hours-container-gap { gap: 2rem; }
 
@@ -129,6 +129,3 @@ hr { border: 1px solid #DDDDDD; }
              cursor: pointer; }
 
 .current-thumbnail { box-shadow: 0 0.3rem #EC9536; }
-
-/* Footer classes */
-.footer-items-horizontal-centering { align-items: center; }
