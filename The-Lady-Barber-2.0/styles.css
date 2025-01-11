@@ -33,15 +33,18 @@ hr { border: 1px solid #DDDDDD; }
 
 .flex-align-items-center { align-items: center; }
 
-.flex-small-gap { gap: 1rem; }
-
-.flex-xsmall-gap { gap: 0.3rem; }
-
 .flex-wrap { flex-wrap: wrap; }
 
 .flex-grow { flex-grow: 1; }
 
 .italic { font-style: italic; }
+
+.nowrap { white-space: nowrap; }
+
+/* We can make all of these classes more efficient */
+.flex-small-gap { gap: 1rem; }
+
+.flex-xsmall-gap { gap: 0.3rem; }
 
 .small-top-padding { padding-top: 1.5rem; }
 
@@ -50,8 +53,6 @@ hr { border: 1px solid #DDDDDD; }
 .small-bottom-padding { padding-bottom: 1.5rem; }
 
 .small-left-padding { padding-left: 1.5rem; }
-
-.nowrap { white-space: nowrap; }
 
 /* ID selectors */
 #page_content { overflow: auto; }
@@ -74,9 +75,14 @@ hr { border: 1px solid #DDDDDD; }
 .google-facebook-logo { width: 30px;
                         height: auto; }
 
-.google-map { height: 250px;
+.google-map { /* height: 250px; */
+              height: 35vh;
               border: 1px solid black;
               box-shadow: 0 4px 6px rgba(0,0,0,0.2); }
+
+/* Services classes */
+/* may use this in place of flex-xsmall-gap in the services section later */
+.service-item-gap { gap: 0.3rem; }
 
 /* Gallery classes */
 .gallery-widget { border: 0.6rem solid var(--quarternary-color); 
@@ -108,7 +114,7 @@ hr { border: 1px solid #DDDDDD; }
                            margin: auto; }
 
 .gallery-arrow-icon { width: 15px;
-                      height: 15px;
+                      height: auto;
                       margin: auto; }
 
 .gallery-left-arrow { margin-left: 0.5rem; }
