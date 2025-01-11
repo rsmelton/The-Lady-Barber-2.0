@@ -40,7 +40,6 @@ hr { border: 1px solid #DDDDDD; }
 .flex-grow { flex-grow: 1; }
 
 /* Utility classes */
-
 .italic { font-style: italic; }
 
 .small-top-padding { padding-top: 1.5rem; }
@@ -132,5 +131,4 @@ hr { border: 1px solid #DDDDDD; }
 .current-thumbnail { box-shadow: 0 0.3rem #EC9536; }
 
 /* Footer classes */
-
 .footer-items-horizontal-centering { align-items: center; }
