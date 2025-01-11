@@ -27,15 +27,6 @@ hr { border: 1px solid #DDDDDD; }
 
 /* .border-debugger { border: 1px solid red; } */
 
-/* ID selectors */
-#page_content { overflow: auto; }
-
-#navbar { padding-bottom: 1rem;
-          background: linear-gradient(90deg, var(--primary-color) 5%, var(--tertiary-color) 100%); }
-
-#footer { background-color: var(--primary-color); 
-          padding: 1rem 0; }
-
 .flex { display: flex; }
 
 .flex-column { flex-direction: column; }
@@ -61,6 +52,15 @@ hr { border: 1px solid #DDDDDD; }
 .small-left-padding { padding-left: 1.5rem; }
 
 .nowrap { white-space: nowrap; }
+
+/* ID selectors */
+#page_content { overflow: auto; }
+
+#navbar { padding-bottom: 1rem;
+          background: linear-gradient(90deg, var(--primary-color) 5%, var(--tertiary-color) 100%); }
+
+#footer { background-color: var(--primary-color); 
+          padding: 1rem 0; }
 
 /* Non-reusable classes */
 .the-lady-barber-logo { width: 4rem;
