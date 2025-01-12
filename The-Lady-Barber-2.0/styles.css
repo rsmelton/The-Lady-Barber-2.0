@@ -126,7 +126,7 @@ hr { border: 1px solid #DDDDDD; }
                        padding: 0.3rem 0; 
                        background-color: var(--quarternary-color); }
 
-.thumbnail { height: 75px;
+.thumbnail { height: 4.6875rem;
              width: auto;
              border-radius: 5%;
              cursor: pointer; }
