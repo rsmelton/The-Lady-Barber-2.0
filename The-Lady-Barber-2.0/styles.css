@@ -64,21 +64,19 @@ hr { border: 1px solid #DDDDDD; }
           padding: 1rem 0; }
 
 /* Non-reusable classes */
-.the-lady-barber-logo { width: 4rem;
-                        height: 4rem;
-                        border-radius: 50%; }
+.header-logo { width: 4rem;
+               height: 4rem;
+               border-radius: 50%; }
 
 .hours-container-gap { gap: 2rem; }
 
 .closed-text { color: red; }
 
-.google-facebook-logo { width: 30px;
-                        height: auto; }
+.footer-icon { width: 1.75rem;
+               height: auto; }
 
-.google-map { /* height: 250px; */
-              height: 35vh;
-              border: 1px solid black;
-              box-shadow: 0 4px 6px rgba(0,0,0,0.2); }
+.map { height: 35vh;
+       border: 1px solid black; }
 
 /* Services classes */
 /* may use this in place of flex-xsmall-gap in the services section later */
