@@ -1,8 +1,8 @@
 :root { --background-color-1: #EEEEEE;
-        --background-color-2: #90c9fb;
+        --background-color-2: #90C9FB;
         --gallery-background-color: rgba(210, 210, 210, .5); 
         --gallery-current-thumbnail-color: #EC9536; 
-        --link-color: rgb(56, 113, 224);
+        --link-color: #3871E0;
         --hr-color: #DDDDDD; }
 
 * { box-sizing: border-box;
