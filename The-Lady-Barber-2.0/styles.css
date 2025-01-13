@@ -1,10 +1,9 @@
-:root { --primary-color: #EEEEEE;
-        --secondary-color: white;
-        --tertiary-color: #90c9fb;
-        --quarternary-color: rgba(210, 210, 210, .5); 
-        --anchor-link-primary-color: rgb(56, 113, 224);
-        --hr-primary-color: #DDDDDD;
-        --current-thumbnail-primary-color: #EC9536; }
+:root { --background-color-1: #EEEEEE;
+        --background-color-2: #90c9fb;
+        --gallery-background-color: rgba(210, 210, 210, .5); 
+        --anchor-link-color: rgb(56, 113, 224);
+        --hr-color: #DDDDDD;
+        --gallery-current-thumbnail-color: #EC9536; }
 
 * { box-sizing: border-box;
     margin: 0;
@@ -15,18 +14,16 @@ html { font-size: 100%;
        font-family: sans-serif;
        color: black; }
 
-/* body { background-color: var(--secondary-color); } */
-
 html, body { height: 100%; }
 
 ul { list-style: none; }
 
-a { color: var(--anchor-link-primary-color); 
+a { color: var(--anchor-link-color); 
     text-decoration: none; }
 
 a:hover { text-decoration: underline; }
 
-hr { border: 1px solid var(--hr-primary-color); }
+hr { border: 1px solid var(--hr-color); }
 
 /* .border-debugger { border: 1px solid red; } */
 
@@ -61,9 +58,9 @@ hr { border: 1px solid var(--hr-primary-color); }
 #page_content { overflow: auto; }
 
 #navbar { padding-bottom: 1rem;
-          background: linear-gradient(90deg, var(--primary-color) 5%, var(--tertiary-color) 100%); }
+          background: linear-gradient(90deg, var(--background-color-1) 5%, var(--background-color-2) 100%); }
 
-#footer { background-color: var(--primary-color); 
+#footer { background-color: var(--background-color-1); 
           padding: 1rem 0; }
 
 /* Non-reusable classes */
@@ -86,7 +83,7 @@ hr { border: 1px solid var(--hr-primary-color); }
 .service-item-gap { gap: 0.3rem; }
 
 /* Gallery classes */
-.gallery-widget { border: 0.6rem solid var(--quarternary-color); 
+.gallery-widget { border: 0.6rem solid var(--gallery-background-color); 
                   border-radius: 2%; }
 
 .gallery-widget-grid { display: grid;
@@ -106,7 +103,7 @@ hr { border: 1px solid var(--hr-primary-color); }
                       display: block; }
 
 .gallery-arrow-container { display: flex;
-                           background-color: var(--quarternary-color);
+                           background-color: var(--gallery-background-color);
                            border-radius: 50%;
                            cursor: pointer;
                            z-index: 10;
@@ -127,11 +124,11 @@ hr { border: 1px solid var(--hr-primary-color); }
                        overflow-x: auto; 
                        scroll-behavior: smooth; 
                        padding: 0.3rem 0; 
-                       background-color: var(--quarternary-color); }
+                       background-color: var(--gallery-background-color); }
 
 .thumbnail { height: 4.6875rem;
              width: auto;
              border-radius: 5%;
              cursor: pointer; }
 
-.current-thumbnail { box-shadow: 0 0.3rem var(--current-thumbnail-primary-color); }
+.current-thumbnail { box-shadow: 0 0.3rem var(--gallery-current-thumbnail-color); }
