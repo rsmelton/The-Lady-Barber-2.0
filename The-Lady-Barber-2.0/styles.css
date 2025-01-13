@@ -1,9 +1,9 @@
 :root { --background-color-1: #EEEEEE;
         --background-color-2: #90c9fb;
         --gallery-background-color: rgba(210, 210, 210, .5); 
-        --anchor-link-color: rgb(56, 113, 224);
-        --hr-color: #DDDDDD;
-        --gallery-current-thumbnail-color: #EC9536; }
+        --gallery-current-thumbnail-color: #EC9536; 
+        --link-color: rgb(56, 113, 224);
+        --hr-color: #DDDDDD; }
 
 * { box-sizing: border-box;
     margin: 0;
@@ -18,7 +18,7 @@ html, body { height: 100%; }
 
 ul { list-style: none; }
 
-a { color: var(--anchor-link-color); 
+a { color: var(--link-color); 
     text-decoration: none; }
 
 a:hover { text-decoration: underline; }
