@@ -41,7 +41,6 @@ hr { border: 1px solid var(--hr-color); }
 
 .nowrap { white-space: nowrap; }
 
-/* We can make all of these classes more efficient */
 .flex-small-gap { gap: 1rem; }
 
 .flex-xsmall-gap { gap: 0.3rem; }
